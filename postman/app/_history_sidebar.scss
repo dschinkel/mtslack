@@ -9,7 +9,7 @@
     flex: 0 0 40px;
     box-sizing: border-box;
     color: var(--content-primary);
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     font-size: 12px;
     padding: 0 10px;
   }
@@ -90,7 +90,7 @@
   cursor: default;
   -webkit-user-select: none;
   user-select: none;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-weight: 400;
   font-size: 13px;
   color: var(--content-primary);
@@ -236,7 +236,7 @@
 }
 
 .history-sidebar-list-item__label {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-weight: 700;
   font-size: 9px;
   text-align: left;
@@ -248,7 +248,7 @@
   color: var(--content-secondary);
   font-size: 12px;
   line-height: 18px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-weight: 400;
   padding: 6px 0;
   word-wrap: break-word;
@@ -260,7 +260,7 @@
 }
 
 .history-sidebar-list-empty-item {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 12px;
   padding: 20px 15px;
   color: var(--content-secondary);

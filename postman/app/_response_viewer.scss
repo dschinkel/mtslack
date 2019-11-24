@@ -118,7 +118,7 @@
 }
 
 .request-loading__message {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 14px;
   color: var(--content-primary);
 }
@@ -206,7 +206,7 @@
 }
 
 .response-viewer-empty__onboarding__heading {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 14px;
   color: var(--content-secondary);
   margin-top: 16px;
@@ -215,7 +215,7 @@
 .response-viewer-empty__onboarding__subheading {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 14px;
   color: var(--content-tertiary);
 }
@@ -510,7 +510,7 @@
 }
 
 .response-cookie-viewer {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   flex: 1;
   overflow-y: auto;
   height: 0;
@@ -556,7 +556,7 @@
 }
 
 .response-cookie-empty-message {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   display: flex;
   color: var(--content-tertiary);
   flex-direction: column;

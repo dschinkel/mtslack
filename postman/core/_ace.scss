@@ -84,7 +84,7 @@
   .ace_search_form, .ace_replace_form {
     border-radius: 3px;
     border: 1px solid var(--hairline-regular);
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     float: left;
     margin-bottom: 4px;
     overflow: hidden;

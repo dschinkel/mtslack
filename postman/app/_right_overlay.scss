@@ -36,7 +36,7 @@
       flex-direction: column;
       flex: 1;
       overflow: hidden;
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
 
       .right-overlay__header {
         display: flex;

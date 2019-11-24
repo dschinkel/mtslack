@@ -10,7 +10,7 @@
 .window-new-button, .launch-runner-button, .import-collection-button {
   margin-left: 10px;
   height: 30px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   color: var(--dark-content-primary);
   background-color: var(--dark-bg-tertiary);
   border-radius: 3px;

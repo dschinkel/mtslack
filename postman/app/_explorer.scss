@@ -5,7 +5,7 @@
   font-size: 12px;
   font-weight: 100;
   border-radius: 4px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   color: var(--content-secondary);
   border: 1px solid var(--hairline-strong);
   height: 100%;
@@ -144,7 +144,7 @@
     cursor: pointer;
     align-items: center;
     color: var(--content-secondary);
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
 
     .explorer-row__save {
       height: 24px;

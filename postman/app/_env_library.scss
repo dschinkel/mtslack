@@ -83,7 +83,7 @@
 }
 
 .environment-template-library-list-item__meta__name {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 13px;
   color: var(--content-primary);
   word-break: break-all;
@@ -94,7 +94,7 @@
 .environment-template-library-list-item__meta__stats {
   display: flex;
   flex-direction: row;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 11px;
   color: var(--content-tertiary);
 }
@@ -126,7 +126,7 @@
 .team-library-invite__wrapper {
   text-align: center;
   font-size: 12px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   color: var(--content-primary);
   padding-top: 10vh;
   flex: 1;

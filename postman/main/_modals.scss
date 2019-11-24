@@ -9,7 +9,7 @@
   height: 100%;
   width: 100%;
   z-index: 120;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
 
   .modal-header {
     flex: 0 0 40px;

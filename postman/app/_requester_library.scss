@@ -114,7 +114,7 @@
 
   .requester-library-tabs--team-meta {
     color: var(--content-primary);
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     padding: 0px 15px 7px;
     width: 320px;
     display: flex;
@@ -145,7 +145,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
   }
 
   .sync-disabled-description {
@@ -485,7 +485,7 @@
 
   .library-team-collection-list-item__meta__name {
     align-items: center;
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     font-size: 13px;
     color: var(--content-primary);
     max-height: 40px;
@@ -496,7 +496,7 @@
 .library-team-collection-list-item__meta__stats {
   display: flex;
   flex-direction: row;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 11px;
   color: var(--content-tertiary);
 }
@@ -506,7 +506,7 @@
 }
 
 .library-team-collection-list-item__body, .library-team-collection-list-item__body--empty {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 12px;
   color: var(--content-primary);
 }
@@ -528,7 +528,7 @@
 }
 
 .library-team-collection-list-item__access__owner {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 11px;
   color: var(--content-primary);
   overflow: hidden;
@@ -537,13 +537,13 @@
 }
 
 .library-team-collection-list-item__access__owner--empty, .library-team-collection-list-item__access__rights {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 11px;
   color: var(--content-tertiary);
 }
 
 .library-team-collection-list-item__access__rights-change {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 11px;
   color: #f47023;
   cursor: pointer;
@@ -553,7 +553,7 @@
   margin-right: 15px;
 
   .library-team-collection-list-item__actions__own {
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     font-size: 12px;
     color: var(--content-primary);
     display: flex;
@@ -642,7 +642,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
 
   .library-empty-list-item {
     display: flex;
@@ -655,7 +655,7 @@
       color: var(--content-primary);
       margin-top: 46px;
       display: block;
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       width: 700px;
     }
 
@@ -756,7 +756,7 @@
 
   .requester-library-header__actions__meta {
     padding: 0 10px;
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     font-size: 12px;
     color: var(--content-primary);
   }
@@ -766,7 +766,7 @@
   display: flex;
   padding: 20px;
   font-size: 12px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   color: var(--content-primary);
 
   .requester-library-invite__description {

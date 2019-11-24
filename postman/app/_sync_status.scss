@@ -59,7 +59,7 @@
 
 .sync-status-tooltip-wrapper {
   width: 220px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
 
   .sync-status-tooltip-header {
     display: flex;

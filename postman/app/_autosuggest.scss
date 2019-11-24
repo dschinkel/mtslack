@@ -10,7 +10,7 @@
 
 .auto-suggest {
   position: relative;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   color: var(--content-primary);
   flex: 1;
   align-self: flex-start;
@@ -159,7 +159,7 @@
 
 .variable-hover-tooltip {
   max-width: 220px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
 
   .variable-meta-item {
     display: flex;
@@ -281,7 +281,7 @@
 .autocomplete-item {
   padding: 5px;
   border-bottom: 1px solid var(--hairline-regular);
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
 
   &.autocomplete-item-focused {
     background-color: var(--bg-tertiary);
@@ -361,7 +361,7 @@
   width: 360px;
   height: 144px;
   display: flex;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   z-index: 100;
 
   .autocomplete-meta-container {

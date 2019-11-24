@@ -22,7 +22,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 12px;
   padding: 8px 0px 0px 8px;
   background-color: var(--bg-secondary);
@@ -340,7 +340,7 @@
 }
 
 .api-sidebar-list-item__request__label {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-weight: 700;
   font-size: 9px;
   color: var(--content-secondary);
@@ -351,7 +351,7 @@
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 13px;
   line-height: 22px;
   padding: 7px 6px;
@@ -380,7 +380,7 @@
     flex: 0 0 40px;
     box-sizing: border-box;
     color: var(--content-primary);
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     font-size: 12px;
     padding: 0 10px;
   }
@@ -646,7 +646,7 @@
 }
 
 .api-sidebar-list-item__label {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-weight: 700;
   font-size: 9px;
   text-align: left;
@@ -658,7 +658,7 @@
   color: var(--content-secondary);
   font-size: 13px;
   line-height: 26px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-weight: 400;
   padding: 6px 6px;
   word-wrap: break-word;
@@ -671,7 +671,7 @@
 }
 
 .api-sidebar-list-empty-item {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 12px;
   padding: 20px 15px;
   color: var(--content-secondary);
@@ -704,7 +704,7 @@
 .entity-empty__description {
   color: var(--content-tertiary);
   font-size: 12px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   padding: 0 8px;
 }
 

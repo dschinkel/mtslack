@@ -35,7 +35,7 @@
   }
 
   .workspace-switcher__name {
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     font-size: 14px;
     color: var(--dark-color-lightest);
     margin-right: 5px;
@@ -56,7 +56,7 @@
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
 
     .workspace-switcher__state {
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       padding: 60px 24px 24px;
       text-align: center;
 
@@ -155,7 +155,7 @@
 
           .workspace-switcher__list__group__title {
             color: var(--content-secondary);
-            font-family: "OpenSans", Helvetica, Arial, sans-serif;
+            font-family: $fontFamily;
             font-size: 10px;
             text-transform: uppercase;
             margin-left: 10px;
@@ -185,7 +185,7 @@
             flex: 1;
             line-height: 30px;
             font-size: 12px;
-            font-family: "OpenSans", Helvetica, Arial, sans-serif;
+            font-family: $fontFamily;
             color: var(--content-primary);
             user-select: none;
             overflow: hidden;
@@ -242,7 +242,7 @@
 .workspace-browser__container {
   height: 100%;
   background-color: var(--bg-primary);
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
 
   .loading-indicator-wrapper {
     display: flex;
@@ -702,7 +702,7 @@
 
     .workspace-browser-filter__actions__meta {
       padding: 0 10px;
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       font-size: 12px;
       color: var(--content-primary);
     }
@@ -710,7 +710,7 @@
 }
 
 .workspace-join-modal {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
 
   .workspace-join-modal--dismiss-icon {
     position: absolute;
@@ -1079,7 +1079,7 @@
     height: 100%;
 
     .workspace-details__name {
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       font-size: 18px;
       font-weight: 600;
       color: var(--content-primary);
@@ -1087,7 +1087,7 @@
     }
 
     .workspace-details__summary {
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       font-size: 14px;
       color: var(--content-primary);
       margin-bottom: 8px;
@@ -1098,7 +1098,7 @@
       display: flex;
       align-items: center;
       flex: 0 0 40px;
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       font-size: 14px;
     }
 
@@ -1108,21 +1108,21 @@
 
     .workspace-details__owner {
       .workspace-details__owner__owner, .workspace-details__last-updated__last-updated, .workspace-details__member-count__member-count {
-        font-family: "OpenSans", Helvetica, Arial, sans-serif;
+        font-family: $fontFamily;
         font-size: 14px;
       }
     }
 
     .workspace-details__last-updated {
       .workspace-details__owner__owner, .workspace-details__last-updated__last-updated, .workspace-details__member-count__member-count {
-        font-family: "OpenSans", Helvetica, Arial, sans-serif;
+        font-family: $fontFamily;
         font-size: 14px;
       }
     }
 
     .workspace-details__member-count {
       .workspace-details__owner__owner, .workspace-details__last-updated__last-updated, .workspace-details__member-count__member-count {
-        font-family: "OpenSans", Helvetica, Arial, sans-serif;
+        font-family: $fontFamily;
         font-size: 14px;
       }
 
@@ -1151,14 +1151,14 @@
               margin-left: 16px;
 
               .user__row__details__name {
-                font-family: "OpenSans", Helvetica, Arial, sans-serif;
+                font-family: $fontFamily;
                 font-size: 12px;
                 font-weight: 600;
                 color: var(--content-primary);
               }
 
               .user__row__details__email {
-                font-family: "OpenSans", Helvetica, Arial, sans-serif;
+                font-family: $fontFamily;
                 font-size: 12px;
                 color: var(--content-primary);
               }
@@ -1435,7 +1435,7 @@
 }
 
 .missing-current-workspace-modal {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
 
   .missing-current-workspace-modal__wrapper {
     padding: 40px 20px;

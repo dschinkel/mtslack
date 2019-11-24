@@ -37,7 +37,7 @@
   overflow-y: auto;
 
   .collection-browser-folder-details-header {
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     font-size: 16px;
     color: var(--content-primary);
     padding: 20px 20px 0 20px;
@@ -118,7 +118,7 @@
 }
 
 .collection-browser-details-header {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 16px;
   color: var(--content-primary);
   padding: 20px 20px 5px 20px;
@@ -484,7 +484,7 @@
 }
 
 .collection-browser-learn-more-header {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   display: flex;
   align-items: center;
   height: 48px;
@@ -704,7 +704,7 @@
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 12px;
   font-weight: 600;
   color: var(--content-secondary);
@@ -807,7 +807,7 @@
 }
 
 .collection-browser-list-item__request__label {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-weight: 700;
   font-size: 9px;
   color: var(--content-secondary);
@@ -818,7 +818,7 @@
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 12px;
   font-weight: 400;
   color: var(--content-secondary);
@@ -861,7 +861,7 @@
 
 .collection-expandable-view-list-item_request__openinbuilder {
   font-size: 11px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-weight: 600;
   padding: 10px 0;
   color: var(--brand-primary);

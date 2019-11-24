@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
   color: var(--content-primary);
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 13px;
   padding: 10px;
   align-items: center;

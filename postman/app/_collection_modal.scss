@@ -8,7 +8,7 @@
 }
 
 .collection-browser-monitor {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   display: flex;
   flex-direction: column;
 
@@ -103,7 +103,7 @@
 }
 
 .collection-browser-mocks {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   display: flex;
   flex-direction: column;
 

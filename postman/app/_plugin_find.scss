@@ -2,7 +2,7 @@
 .plugin__find-and-replace__pane {
   border-bottom: 1px solid var(--hairline-strong);
   cursor: default;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 12px;
   overflow: hidden;
   z-index: 50;

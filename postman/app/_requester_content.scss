@@ -158,7 +158,7 @@
   -webkit-user-select: none;
   user-select: none;
   cursor: pointer;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   color: var(--content-primary);
   font-size: 12px;
 
@@ -237,7 +237,7 @@
       background: var(--bg-primary);
       height: 32px;
       font-size: 12px;
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       color: var(--content-secondary);
       font-weight: 600;
       padding-left: 16px;
@@ -251,7 +251,7 @@
       background: var(--bg-primary);
       height: 32px;
       font-size: 12px;
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       color: var(--content-secondary);
       font-weight: 600;
       padding-left: 16px;
@@ -267,7 +267,7 @@
       background: var(--bg-primary);
       height: 32px;
       font-size: 12px;
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       color: var(--content-secondary);
       font-weight: 600;
       padding-left: 16px;
@@ -281,7 +281,7 @@
       background: var(--bg-primary);
       height: 32px;
       font-size: 12px;
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       color: var(--content-secondary);
       font-weight: 600;
       padding-left: 16px;
@@ -500,7 +500,7 @@
 .request-editor-actions-manage-cookies, .request-editor-actions-generate-code, .request-editor-actions-comments, .request-editor-actions-reset {
   padding-left: 10px;
   font-size: 12px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   color: var(--brand-primary);
   cursor: default;
   -webkit-user-select: none;
@@ -696,7 +696,7 @@
 
   .public-DraftEditor-content, .public-DraftEditorPlaceholder-root {
     font-size: 12px;
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     line-height: 1.5;
   }
 }
@@ -760,7 +760,7 @@
     .request-body-type-selector-beautify {
       padding-left: 10px;
       font-size: 12px;
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       color: var(--brand-primary);
       cursor: default;
       -webkit-user-select: none;
@@ -783,7 +783,7 @@
   align-items: center;
   margin: 5px 10px;
   font-size: 12px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   color: var(--content-primary);
 
   input {
@@ -916,7 +916,7 @@
   &.request-body-none-editor-wrapper {
     align-items: center;
     color: var(--content-tertiary);
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     font-size: 12px;
     border-top: 1px solid var(--hairline-regular);
     padding-top: 10px;
@@ -1266,7 +1266,7 @@
 
   .request-meta-name {
     color: var(--content-primary);
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     font-size: 13px;
     font-weight: 600;
     overflow: hidden;
@@ -1280,7 +1280,7 @@
 }
 
 .request-meta-saved-responses-title {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   color: var(--content-primary);
   font-size: 12px;
   font-weight: 600;
@@ -1331,7 +1331,7 @@
   text-align: center;
   padding: 3px 0px;
   word-break: break-word;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   border-radius: 3px;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
 

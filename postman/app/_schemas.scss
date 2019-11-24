@@ -70,7 +70,7 @@
 
     .add-schema__heading {
       padding: 10px;
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       font-size: 12px;
       font-weight: 600;
       color: var(--content-primary);
@@ -91,7 +91,7 @@
 
     .add-schema__description {
       padding: 10px;
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       font-size: 11px;
       font-weight: 400;
       color: var(--bg-primary--shade--four);
@@ -124,7 +124,7 @@
       align-items: center;
 
       .schema-editor-container__heading {
-        font-family: "OpenSans", Helvetica, Arial, sans-serif;
+        font-family: $fontFamily;
         color: var(--content-primary);
         font-size: 13px;
         font-weight: 600;
@@ -208,7 +208,7 @@
   }
 
   .add-entity__label {
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     margin-bottom: 8px;
   }
 

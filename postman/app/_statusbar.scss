@@ -45,7 +45,7 @@
 .sb__item__text {
   color: var(--content-secondary);
   font-size: 12px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   cursor: pointer;
   max-width: 175px;
   cursor: default;

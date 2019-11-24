@@ -20,7 +20,7 @@
     width: 70%;
     flex-direction: column;
     justify-content: flex-start;
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
 
     .configuration-list-item__title {
       display: flex;
@@ -109,7 +109,7 @@
           margin: 4px;
           padding: 6px 4px;
           color: var(--content-tertiary);
-          font-family: "OpenSans", Helvetica, Arial, sans-serif;
+          font-family: $fontFamily;
           position: absolute;
         }
 
@@ -141,7 +141,7 @@
       .configuration-list-item__action__normal {
         padding: 0px;
         font-size: 12px;
-        font-family: "OpenSans", Helvetica, Arial, sans-serif;
+        font-family: $fontFamily;
         color: var(--content-tertiary);
         overflow: hidden;
         text-overflow: ellipsis;

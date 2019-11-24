@@ -79,7 +79,7 @@
       margin: 0;
       padding: 5px;
       font-size: 10px;
-      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-family: $fontFamily;
       font-weight: bold;
       color: var(--content-primary);
       cursor: default;
@@ -284,7 +284,7 @@
 
           .public-DraftEditor-content, .public-DraftEditorPlaceholder-root {
             font-size: 12px;
-            font-family: "OpenSans", Helvetica, Arial, sans-serif;
+            font-family: $fontFamily;
           }
 
           .DraftEditor-root {
@@ -341,7 +341,7 @@
   margin: 0;
   padding: 5px;
   font-size: 10px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-weight: bold;
   color: var(--content-primary);
   cursor: default;

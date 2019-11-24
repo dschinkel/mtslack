@@ -36,6 +36,8 @@ $gray: var(--gray);
 $silver: var(--silver);
 $black: var(--black);
 
+$fontFamily: "OpenSans", Helvetica, Arial, sans-serif;
+
 @import "core/index";
 @import "main/index";
 @import "app/index";

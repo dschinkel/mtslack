@@ -1,7 +1,7 @@
 .alert {
   padding: 16px;
   display: flex;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   color: var(--content-primary);
   position: relative;
 

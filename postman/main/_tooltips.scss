@@ -3,7 +3,7 @@
   position: absolute;
   z-index: 1010;
   display: block;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   margin: 0;
   opacity: 0;
   max-width: 300px;
@@ -158,7 +158,7 @@
     }
   }
 
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 12px;
   position: absolute;
   left: 75px;

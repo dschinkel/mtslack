@@ -1,7 +1,7 @@
 
 .accordion {
   border-top: 1px solid var(--hairline-regular);
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
 
   .accordion-item {
     margin-top: 16px;

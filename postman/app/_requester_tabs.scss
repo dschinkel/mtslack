@@ -121,7 +121,7 @@
   flex-direction: row;
   align-items: center;
   font-size: 11px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   cursor: default;
   -webkit-user-select: none;
   user-select: none;
@@ -294,7 +294,7 @@
 }
 
 .requester-tab__name {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   flex: 1;
   overflow: hidden;
   text-overflow: ellipsis;

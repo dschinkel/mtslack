@@ -231,7 +231,7 @@
   flex: 1;
   align-items: center;
   justify-content: center;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   background-color: var(--bg-primary);
   height: 100%;
 
@@ -282,7 +282,7 @@
 
   .entity-empty__title {
     font-size: 16px;
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     font-weight: 600;
     color: var(--content-primary);
     margin-bottom: 20px;
@@ -290,7 +290,7 @@
 
   .entity-empty__subtitle {
     font-size: 12px;
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     color: var(--content-secondary);
     text-align: center;
     margin-bottom: 40px;
@@ -305,7 +305,7 @@
   .empty-empty__action .btn-primary {
     height: 40px;
     font-size: 14px;
-    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+    font-family: $fontFamily;
     font-weight: 600;
     padding: 10px 20px;
   }

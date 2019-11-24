@@ -309,7 +309,7 @@
   flex-direction: column;
   flex: 1;
   padding: 24px 32px;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 12px;
   background-color: var(--bg-secondary);
   color: var(--content-primary);

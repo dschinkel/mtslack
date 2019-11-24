@@ -18,7 +18,7 @@
 }
 
 .settings-shortcuts-list-item-header {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 11px;
   color: var(--content-tertiary);
   margin-bottom: 8px;
@@ -37,14 +37,14 @@
 
 .settings-shortcuts-list-item-label {
   flex: 2;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 12px;
   color: var(--content-primary);
 }
 
 .settings-shortcuts-list-item-value {
   flex: 1;
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   font-size: 12px;
   color: var(--content-primary);
 }

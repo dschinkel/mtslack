@@ -79,7 +79,7 @@
 }
 
 .notification-feed {
-  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-family: $fontFamily;
   background-color: var(--bg-secondary);
   width: 372px;
   margin-top: 5px;
