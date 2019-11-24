@@ -1,0 +1,23 @@
+.request-editor-save-button {
+  .btn {
+    color: $text;
+    background-color: $button;
+
+    &:hover, &.is-hovered {
+      background-color: $hl;
+      color: $selectFg;
+    }
+
+    &:active, &.is-active {
+      background-color: $active;
+      color: $selectFg;
+    }
+
+    &:first-child {
+      &.is-disabled {
+        background-color: $button;
+        color: $disabled;
+      }
+    }
+  }
+}
