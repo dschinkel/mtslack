@@ -1,31 +1,74 @@
-
 .input-checkbox {
-  height: 16px;
-  width: 16px;
-  border: 1px solid var(--hairline-regular);
-  border-radius: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
+  background: $bg;
 
-  .pm-icon-normal {
-    opacity: 0;
+  &[disabled] {
+    background: $disabled;
   }
 
-  &:hover .pm-icon-normal, &.is-hovered .pm-icon-normal {
-    opacity: 0.4;
-  }
-
-  &.is-disabled {
-    cursor: default;
+  &:focus {
+    outline-color: $primary;
   }
 
   &.is-selected {
-    background-color: var(--color-darkest);
+    background-color: $accent;
 
     .pm-icon use {
-      fill: var(--bg-primary);
+      fill: $bg;
     }
   }
+}
+
+input {
+  &.input-checkbox,
+  &[type=checkbox].input-checkbox {
+    background: $bg;
+  }
+
+  &.input-checkbox[disabled],
+  &[type=checkbox].input-checkbox[disabled] {
+    background: $disabled;
+    border-color: $disabled;
+  }
+
+  &.input-checkbox:focus,
+  &[type=checkbox].input-checkbox:focus {
+    outline-color: $primary;
+  }
+}
+
+input[type=checkbox]:not(.c-toggle__input) {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 2px solid $accent;
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 2em;
+  padding: 0 !important;
+  position: relative;
+
+  &:checked {
+    background: $accent;
+  }
+
+  &:after {
+    content: '' !important;
+    position: absolute !important;
+    left: 1px !important;
+    top: 5px !important;
+    background: $bg !important;
+    width: 2px !important;
+    height: 2px !important;
+    box-shadow: 2px 0 0 $bg,
+    4px 0 0 $bg,
+    4px -2px 0 $bg,
+    4px -4px 0 $bg,
+    4px -6px 0 $bg,
+    4px -8px 0 $bg !important;
+    transform: rotate(45deg) !important;
+  }
+}
+
+.no_touch input[type=checkbox]:hover {
+  border-color: transparent;
 }
