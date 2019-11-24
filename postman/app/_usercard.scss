@@ -1,0 +1,79 @@
+
+.user-card {
+  display: flex;
+  width: 240px;
+  background: transparent;
+  padding: 16px;
+
+  .user-card__left {
+    padding-right: 16px;
+  }
+
+  .user-card__right {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+
+    .user-card__right-name {
+      font-weight: 500;
+      font-size: 14px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .user-card__right-email {
+      font-size: 12px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .user-card__right-add-account {
+      display: flex;
+      align-items: center;
+      flex: 1;
+    }
+
+    .user-card__right-signout {
+      size: 12px;
+      color: var(--brand-primary);
+      padding-top: 10px;
+      cursor: pointer;
+    }
+  }
+}
+
+
+.error-card-container {
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--content-secondary);
+  height: 100%;
+
+  .icon-button {
+    background: var(--accent-error--highlight);
+  }
+
+  .error-card-container__icon, .error-card-container__subtitle {
+    margin-bottom: 16px;
+  }
+
+  .error-card-container__title {
+    margin-bottom: 8px;
+  }
+
+  .error-card-container__actions {
+    display: flex;
+    color: var(--brand-primary);
+    cursor: pointer;
+
+    .error-card-container__actions-icon {
+      margin-right: 8px;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+
+.edit-collection-modal {
+  .field-label {
+    margin-bottom: 5px;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .edit-collection-modal-name-input {
+    margin-bottom: 15px;
+  }
+
+  .edit-collection-modal-description-editor {
+    &.ace_focus {
+      border: 1px solid var(--hairline-strong);
+    }
+
+    .ace_active-line {
+      background: none;
+    }
+  }
+}
+
+.fork-collection-modal .button-large {
+  width: 200px;
+}
+
+.fork-collection-modal__contents {
+  display: flex;
+  flex-direction: column;
+
+  .alert-wrapper {
+    margin-top: 8px;
+  }
+}
+
+.fork-collection .fork-collection__input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  .fork-collection__input-group__label {
+    margin: 24px 0 8px 0;
+  }
+
+  .fork-collection__input-group__input {
+    display: flex;
+  }
+
+  .fork-collection__input-group__helptext {
+    color: var(--content-tertiary);
+    margin-top: 8px;
+    font-size: 12px;
+  }
+}
+
+.fork-collection-dropdown {
+  .workspace-name {
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 400px;
+  }
+
+  .dropdown-menu-item {
+    justify-content: space-between;
+  }
+
+  .dropdown-menu {
+    max-height: 355px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+.export-collection-modal__message {
+  font-size: 13px;
+}
+
+.export-collection-modal__message__collection-name {
+  font-weight: 600;
+}
+
+.export-collection-modal__choices {
+  margin: 10px 0;
+  font-size: 13px;
+
+  .export-collection-modal__choices-item {
+    padding: 5px;
+  }
+
+  .export-collection-modal__choice__label {
+    margin: 0px 10px;
+  }
+
+  .export-collection-modal__choice__button {
+    margin-right: 5px;
+  }
+}
+
+.export-collection-modal__subtext {
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--content-secondary);
+
+  .export-collection-modal__subtext__learn-more {
+    color: var(--brand-primary);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.edit-request-modal {
+  .field-label {
+    margin-bottom: 5px;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .edit-request-modal-name-input {
+    margin-bottom: 15px;
+  }
+
+  .edit-request-modal-description-editor {
+    &.ace_focus {
+      border: 1px solid var(--hairline-strong);
+    }
+
+    .ace_active-line {
+      background: none;
+    }
+  }
+}

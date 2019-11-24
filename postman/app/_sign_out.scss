@@ -1,0 +1,60 @@
+
+.loading-indicator-wrapper.sign-out-loading-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.sign-out-loading--text {
+  margin-left: 150px;
+}
+
+.sign-out-warning--checkbox {
+  position: absolute;
+  margin-top: 0px;
+}
+
+.sign-out-warning--checkbox-text {
+  margin-left: 24px;
+}
+
+.sign-out-warning-container {
+  background-color: rgba(237, 75, 72, 0.1);
+  padding: 10px 10px 10px 15px;
+  margin-bottom: 15px;
+  border: 1px solid var(--hairline-regular);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+
+  .sign-out-warning--header {
+    color: var(--accent-error);
+    font-weight: 600;
+  }
+
+  .sign-out-warning--warning-icon {
+    margin-right: 7px;
+    margin-top: 2px;
+    flex-shrink: 0;
+
+    use {
+      fill: var(--accent-error);
+    }
+  }
+
+  .sign-out-warning--text {
+    padding-right: 10px;
+    margin-left: 24px;
+  }
+
+  .sign-out-warning--list {
+    list-style-type: decimal;
+    padding-left: 0;
+    list-style-position: inside;
+  }
+
+  .sign-out-settings-icon {
+    vertical-align: middle;
+  }
+}

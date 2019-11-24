@@ -1,0 +1,43 @@
+
+.radio-button {
+  visibility: hidden;
+  overflow: visible;
+  background-repeat: no-repeat;
+  background-size: 12px 12px;
+  padding: 12px 12px;
+  cursor: default;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+
+  &:before {
+    visibility: visible;
+    content: '';
+    height: 12px;
+    width: 12px;
+    display: block;
+    border-radius: 50%;
+    background: var(--bg-primary--shade--four);
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1px;
+  }
+
+  &:checked:before {
+    height: 7px;
+    width: 7px;
+    visibility: visible;
+    content: '';
+    background-color: var(--brand-primary);
+    border: 3px solid var(--bg-primary--shade--four);
+  }
+
+  + span {
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+}

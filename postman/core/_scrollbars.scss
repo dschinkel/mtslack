@@ -1,0 +1,37 @@
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  overflow: visible;
+}
+
+::-webkit-scrollbar-button {
+  height: 0;
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-clip: padding-box;
+  border: solid transparent;
+  border-width: 3px;
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-clip: padding-box;
+  border: solid transparent;
+  border-width: 3px;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--bg-tertiary--shade--three);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--bg-tertiary);
+}

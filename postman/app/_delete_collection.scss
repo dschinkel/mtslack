@@ -1,0 +1,54 @@
+
+.delete-confirmation-modal-subscriber-message {
+  padding-bottom: 10px;
+}
+
+.delete-confirmation-modal-delete-button {
+  background-color: var(--accent-error);
+  margin-left: 10px;
+
+  &:hover, &.is-hovered {
+    background-color: var(--accent-error--shade--two);
+  }
+
+  &:active, &.is-active, &:focus, &.is-focused {
+    background-color: var(--accent-error--shade--one);
+  }
+
+  &.is-disabled {
+    &:hover, &.is-hovered {
+      background-color: var(--accent-error--shade--three);
+    }
+
+    &:active, &.is-active, &:focus, &.is-focused {
+      background-color: var(--accent-error--shade--one);
+    }
+  }
+}
+
+.delete-confirmation-modal-message .helptext {
+  padding-top: 20px;
+}
+
+.delete-confirmation-modal-controls {
+  display: flex;
+  flex: 0 0 80px;
+  box-sizing: border-box;
+  padding-top: 20px;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  .btn.is-focused {
+    border: 1px solid var(--brand-secondary);
+  }
+}
+
+.collection-modal-onboarding-wrapper {
+  .collection-modal-onboarding-helptext {
+    margin-bottom: 10px;
+  }
+
+  .collection-name-label {
+    margin-bottom: 5px;
+  }
+}

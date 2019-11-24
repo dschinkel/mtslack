@@ -1,0 +1,253 @@
+
+.share-entity-model {
+  .modal-content {
+    overflow-y: hidden;
+
+    .create-new-modal__content {
+      height: 100%;
+    }
+  }
+
+  .tabs {
+    padding: 10px 0px 0px 0px;
+    border-bottom: 1px solid var(--hairline-regular);
+
+    .tab {
+      cursor: default;
+    }
+  }
+}
+
+.share-entity-tab-content {
+  padding: 16px;
+  max-height: 60vh;
+  overflow-y: auto;
+
+  .tab-share-content .tab-share-content-meta-text {
+    color: var(--content-primary);
+    font-size: 12px;
+  }
+}
+
+.select-workspace-entity-container .tabs {
+  width: 50%;
+}
+
+.share-collections-content-container {
+  padding: 8px 0px;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+
+  .add-to-workspace-empty--container {
+    width: 400px;
+    display: flex;
+    align-self: center;
+  }
+
+  .workspace-selector-container {
+    display: flex;
+    flex: 100%;
+    justify-content: space-between;
+
+    .workspace-selector-dropdown-container {
+      display: flex;
+      flex: 50%;
+
+      .workspace-selector-value {
+        display: flex;
+        flex: 50%;
+      }
+
+      .workspace-selector-meta-container {
+        flex: 50%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+
+        .workspace-selector-meta {
+          padding-left: 24px;
+          color: var(--content-tertiary);
+        }
+      }
+    }
+
+    .workspace-selector {
+      display: flex;
+      flex: 50%;
+      flex-direction: column;
+      padding: 5px 0;
+    }
+  }
+}
+
+.layout-2-column .share-collections-content-container .workspace-selector-container .workspace-selector {
+  flex: 1;
+}
+
+.share-collections-content-container {
+  .workspace-selector-container .workspace-selector {
+    .workspace-selector-label {
+      padding-bottom: 5px;
+      font-size: 11px;
+      color: var(--content-primary);
+      font-weight: 600;
+    }
+
+    .input-checkbox {
+      margin-right: 10px;
+    }
+  }
+
+  .dropdown {
+    width: 100%;
+
+    .dropdown-button {
+      width: 100%;
+
+      .btn {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  .tab-share-content--subtab-entity {
+    display: flex;
+    flex: 100%;
+
+    .entity-list-container-wrapper {
+      height: 180px;
+      display: flex;
+      flex: 0 50%;
+
+      .entity-list-container {
+        height: 150px;
+        overflow-y: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--hairline-regular);
+        margin-top: 8px;
+        padding: 8px;
+
+        .entity-checkbox-item-container {
+          flex: 1 0 20px;
+          margin-top: 16px;
+          display: flex;
+          flex-direction: row;
+
+          .entity-checkbox-item-meta {
+            margin-left: 8px;
+          }
+
+          &:nth-child(1) {
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+
+    .entity-selection-meta-container {
+      display: flex;
+      flex: 0 50%;
+      align-items: center;
+      align-content: center;
+
+      .entity-selection-meta {
+        color: var(--content-tertiary);
+        padding-left: 16px;
+      }
+    }
+  }
+
+  .share-collections-content-container_warning-text {
+    align-self: flex-end;
+  }
+}
+
+.release-notes-editor {
+  padding: 20px;
+  background-color: var(--bg-secondary);
+  flex: 1;
+}
+
+.share-entity-modal-container {
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+
+  .modal-content {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infobar {
+    margin: -20px -20px 0 -20px;
+  }
+
+  .share-entity-modal-container--tabs {
+    border-bottom: 1px solid var(--hairline-regular);
+    margin: -12px -12px 16px -12px;
+
+    + .infobar {
+      margin-top: -16px;
+    }
+  }
+
+  .share-entity-modal-container--action {
+    width: 140px;
+  }
+
+  .share-entity-modal-container--infobar-icon {
+    margin-right: 10px;
+
+    use {
+      fill: var(--accent-error);
+    }
+
+    &.is-offline use {
+      fill: var(--accent-warning);
+    }
+  }
+
+  .share-entity-modal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .share-entity-modal__recent-workspaces-title {
+      font-size: 12px;
+      font-weight: 600;
+      margin: 8px 0;
+    }
+
+    .share-entity-modal__all-workspaces-title {
+      font-size: 12px;
+      font-weight: 600;
+      margin: 8px 0;
+      margin-top: 16px;
+    }
+
+    .share-entity-modal__search .input-search-group {
+      height: 40px;
+      border-radius: 3px;
+      margin-bottom: 8px;
+    }
+
+    .share-entity-modal__workspace-container {
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    .share-entity-modal__all-workspaces {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+    }
+
+    .share-entity-modal__all-workspaces-list {
+      overflow-y: auto;
+    }
+  }
+}

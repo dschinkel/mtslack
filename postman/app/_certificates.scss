@@ -1,0 +1,192 @@
+
+.certificate-list-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .certificate-list-wrapper__heading {
+    flex: 0 0 auto;
+  }
+
+  .certificate-list {
+    flex: 1;
+    overflow-y: auto;
+    margin-top: 10px;
+  }
+}
+
+.certificate-list-wrapper__heading {
+  display: flex;
+  align-items: center;
+
+  .certificate-list-wrapper__heading__title {
+    flex: 1;
+  }
+
+  .certificate-list-wrapper__heading__add {
+    flex: 0 0 auto;
+    cursor: pointer;
+    color: var(--brand-primary);
+  }
+}
+
+.certificate-list-item {
+  border-bottom: 1px solid var(--hairline-regular);
+  padding: 5px 0;
+}
+
+.certificate-list-item__row {
+  display: flex;
+
+  .certificate-list-item__key {
+    display: flex;
+    align-items: center;
+    flex: 0 0 80px;
+
+    .warning-button {
+      margin: 0 0 2px 5px;
+    }
+  }
+
+  .certificate-list-item__value {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .certificate-list-item__value-password {
+    display: inline-block;
+
+    input {
+      padding-right: 25px;
+      height: auto;
+      width: auto;
+    }
+
+    .password-input__toggle i {
+      padding: 1px;
+    }
+  }
+
+  .certificate-list-item__controls {
+    flex: 0 0 auto;
+    cursor: pointer;
+    color: #b94a48;
+  }
+}
+
+.add-certificate__heading {
+  font-weight: 600;
+
+  .breadcrumbs {
+    min-width: 40px;
+    overflow: hidden;
+    padding-right: 15px;
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::after {
+      content: '\203A';
+      position: absolute;
+      right: 3px;
+      top: -2px;
+    }
+  }
+}
+
+.add-certificate__fields {
+  margin-top: 15px;
+}
+
+.add-certificate__field {
+  display: flex;
+  margin: 5px 0;
+
+  .add-certificate__field__label {
+    flex: 0 0 80px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .add-certificate__field__value {
+    flex: 1;
+    display: flex;
+
+    .add-certificate__field__input {
+      flex: 1;
+
+      &.add-certificate__field__input--port {
+        flex: 0 0 80px;
+      }
+
+      &.password-input {
+        margin-left: 4px;
+        max-width: 315px;
+      }
+    }
+  }
+}
+
+.add-certificate__field__tag {
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.add-certificate__field__divider {
+  margin: 0 3px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.add-certificate__controls {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.ca-certificate-wrapper {
+  padding-bottom: 10px;
+}
+
+.ca-certificate-wrapper__heading {
+  display: flex;
+
+  .ca-certificate-wrapper__heading__label {
+    flex: 1;
+  }
+
+  .ca-certificate-wrapper__heading__toggle {
+    flex: none;
+  }
+}
+
+.ca-certificate__field {
+  display: flex;
+  margin: 5px 0;
+
+  .ca-certificate__field__label {
+    flex: none;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+
+    .warning-button {
+      margin: 0 0 1px 5px;
+    }
+  }
+
+  &.disabled {
+    opacity: 0.4;
+  }
+}

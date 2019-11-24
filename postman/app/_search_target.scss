@@ -1,0 +1,128 @@
+
+.search-target-selector-wrapper {
+  position: absolute;
+  background-color: var(--bg-secondary);
+  left: 20px;
+  z-index: 1;
+  width: 300px;
+  height: 200px;
+  font-size: 11px;
+  top: 0;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+
+  .search-target-selector-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-target-selector-header {
+    padding: 5px 10px;
+    background-color: var(--bg-secondary);
+  }
+
+  .input-search-group {
+    margin: 10px 0px;
+    border-radius: 3px;
+  }
+
+  .search-target-selector-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .search-target-selector-meta--count {
+    opacity: 0.4;
+  }
+
+  .search-target-selector-meta--count-selected {
+    padding: 0px 10px;
+    opacity: 0.4;
+  }
+
+  .search-target-selector-meta--action {
+    padding: 0 0 0 10px;
+    border-left: 1px solid var(--hairline-strong);
+    border-radius: 0px;
+    line-height: 20px;
+    font-size: 11px;
+  }
+
+  .search-target-selector--list {
+    padding: 5px 0;
+    border-top: 1px solid var(--hairline-strong);
+    height: 90px;
+    overflow-y: auto;
+  }
+
+  .search-target-selector--list-item {
+    display: flex;
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &:hover, &.is-hovered {
+      background-color: var(--bg-secondary--shade--one);
+    }
+
+    span {
+      white-space: pre;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+
+.search-field-selector-wrapper {
+  position: absolute;
+  background-color: var(--bg-secondary);
+  color: var(--content-primary);
+  top: 30px;
+  left: 5px;
+  font-size: 10px;
+  width: 150px;
+  line-height: 20px;
+  padding: 10px 15px;
+  z-index: 1;
+  max-height: 280px;
+  overflow: auto;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+
+  .search-field-selector--head {
+    padding-bottom: 10px;
+    font-weight: 600;
+    opacity: 0.6;
+  }
+
+  .search-field-selector--list {
+    margin-top: 5px;
+  }
+
+  .search-field-selector--section {
+    border-top: 1px solid var(--hairline-strong);
+    position: relative;
+    padding: 10px 0;
+  }
+
+  .search-field-selector--section-label {
+    position: absolute;
+    background-color: var(--bg-secondary);
+    top: -11px;
+    padding-right: 5px;
+    font-weight: bold;
+  }
+
+  .search-field-selector--section-item {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+
+    .input-checkbox {
+      margin-right: 10px;
+    }
+  }
+}

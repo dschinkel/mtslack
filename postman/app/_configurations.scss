@@ -1,0 +1,165 @@
+
+/**
+ * Styling for `ConfigurationListItem` component
+ */
+
+.configuration-list-item__container {
+  display: flex;
+  flex-direction: row;
+  min-height: 50px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  width: 100%;
+
+  &:hover {
+    background-color: var(--bg-secondary);
+  }
+
+  .configuration-list-item__meta-text {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-family: "OpenSans", Helvetica, Arial, sans-serif;
+
+    .configuration-list-item__title {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--content-primary);
+      margin-bottom: 3px;
+    }
+
+    .configuration-list-item__description {
+      font-size: 13px;
+      color: var(--content-secondary);
+      margin-top: 3px;
+    }
+  }
+
+  .configuration-list-item__options {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+    min-width: 30%;
+    margin-left: 20px;
+
+    .configuration-list-item__input {
+      display: flex;
+      margin-bottom: 3px;
+      font-size: 12px;
+
+      .configuration-list-item__input--input-box {
+        width: 80px;
+      }
+
+      .configuration-list-item__dropdown-btn {
+        width: 70%;
+        justify-content: space-between;
+      }
+
+      .configuration-list-item__input--multi-select {
+        width: 70%;
+        padding: 5px;
+        border-radius: 3px;
+        border: 1px solid var(--hairline-regular);
+        background-color: var(--bg-secondary);
+
+        &:hover, &.is-hovered {
+          border-color: var(--hairline-regular--shade--two);
+          background-color: var(--bg-secondary--shade--one);
+        }
+
+        .configuration-list-item__selected-list {
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          min-height: 38px;
+          height: auto;
+          padding: 0;
+
+          .editable-tag {
+            width: max-content;
+          }
+        }
+      }
+
+      .configuration-list-item__input--multi-input {
+        border-radius: 3px;
+        border: 1px solid var(--hairline-regular);
+        background-color: var(--bg-secondary);
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        height: 80px;
+        width: 70%;
+        padding: 5px;
+        overflow-y: auto;
+        position: relative;
+
+        &:hover, &.is-hovered {
+          border-color: var(--hairline-regular--shade--two);
+          background-color: var(--bg-secondary--shade--one);
+        }
+
+        .configuration-list-item-multiInput-placeholder {
+          margin: 4px;
+          padding: 6px 4px;
+          color: var(--content-tertiary);
+          font-family: "OpenSans", Helvetica, Arial, sans-serif;
+          position: absolute;
+        }
+
+        .configuration-list-item__input-field {
+          flex-grow: 1;
+          max-width: 90%;
+          margin: 8px 4px;
+          padding: 4px;
+          color: var(--content-primary);
+        }
+
+        .editable-tag {
+          width: max-content;
+          max-width: 90%;
+
+          .editable-tag__content {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+
+    .configuration-list-item__action {
+      margin-top: 3px;
+      height: 20px;
+
+      .configuration-list-item__action__normal {
+        padding: 0px;
+        font-size: 12px;
+        font-family: "OpenSans", Helvetica, Arial, sans-serif;
+        color: var(--content-tertiary);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        .configuration-list-item__action__normal-text {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+
+      .configuration-list-item__action__override {
+        display: inline-flex;
+
+        .configuration-list-item__action__override-btn {
+          padding: 0px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+
+
+.disable-component {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.pm-icon {
+  display: inline-flex;
+}
+
+.pm-icon-xs {
+  height: 12px;
+  width: 12px;
+
+  svg {
+    height: 12px;
+    width: 12px;
+  }
+}
+
+.pm-icon-sm {
+  height: 16px;
+  width: 16px;
+
+  svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.pm-icon-md {
+  height: 24px;
+  width: 24px;
+
+  svg {
+    height: 24px;
+    width: 24px;
+  }
+}
+
+.pm-icon-lg {
+  height: 32px;
+  width: 32px;
+
+  svg {
+    height: 32px;
+    width: 32px;
+  }
+}
+
+.pm-icon-normal use {
+  fill: var(--content-secondary);
+}
+
+.pm-icon-primary use {
+  fill: var(--dark-color-lightest);
+}
+
+.pm-icon-secondary use {
+  fill: var(--brand-primary);
+}
+
+.pm-icon-tertiary use {
+  fill: var(--content-secondary);
+}
+
+.pm-icon-header use {
+  fill: var(--dark-color-lightest);
+}

@@ -1,0 +1,202 @@
+
+@keyframes indeterminateProgress {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 7000px 0;
+  }
+}
+
+.progress-bar {
+  background-color: var(--bg-tertiary);
+  margin-top: 8px;
+  height: 4px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+
+  .indeterminate {
+    height: 100%;
+    background-image: -webkit-repeating-linear-gradient(-45deg, #F8A97B 0px, #F8A97B 40px, #F47023 41px, #F47023 80px);
+    background-repeat: repeat-x;
+    animation: indeterminateProgress 60s linear infinite;
+  }
+
+  .determinate {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+
+    &.success {
+      background-color: var(--accent-success);
+    }
+
+    &.warning {
+      background-color: var(--accent-warning);
+    }
+
+    &.error {
+      background-color: var(--accent-error);
+    }
+  }
+}
+
+@-webkit-keyframes bounce-middle {
+  0% {
+    height: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  50% {
+    height: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  100% {
+    height: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+@keyframes bounce-middle {
+  0% {
+    height: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  50% {
+    height: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  100% {
+    height: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+}
+
+.loading-indicator-wrapper {
+  height: 20px;
+
+  .loading-indicator {
+    position: relative;
+    display: inline-block;
+    -webkit-animation: bounce-middle 0.6s ease 0.1s infinite;
+    animation: bounce-middle 0.6s ease 0.1s infinite;
+    width: 4px;
+    height: 20px;
+    border-radius: 2px;
+    background-color: var(--bg-tertiary--shade--three);
+
+    &:before, &:after {
+      width: 4px;
+      height: 20px;
+      border-radius: 2px;
+      background-color: var(--bg-tertiary--shade--three);
+    }
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50%;
+      -webkit-transform: translateY(-10px) translateZ(0);
+      transform: translateY(-10px) translateZ(0);
+    }
+
+    &:before {
+      left: -6px;
+      -webkit-animation: bounce-middle 0.6s ease 0s infinite;
+      animation: bounce-middle 0.6s ease 0s infinite;
+    }
+
+    &:after {
+      left: 6px;
+      -webkit-animation: bounce-middle 0.6s ease 0.2s infinite;
+      animation: bounce-middle 0.6s ease 0.2s infinite;
+    }
+  }
+}
+
+
+.radial-progress {
+  position: relative;
+
+  .progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(270deg);
+    stroke-width: 3px;
+
+    .radial-progress__progress {
+      z-index: 2;
+      transition: stroke-dashoffset 1s;
+    }
+
+    .radial-progress__background {
+      stroke: var(--bg-tertiary);
+    }
+  }
+
+  &.is-running {
+    .progress {
+      stroke: var(--brand-secondary);
+    }
+
+    &:after {
+      color: var(--brand-secondary);
+    }
+  }
+
+  &.is-finished {
+    .progress {
+      stroke: var(--accent-success);
+    }
+
+    &:after {
+      color: var(--accent-success);
+    }
+  }
+
+  &:after {
+    content: attr(data-progress);
+    position: absolute;
+  }
+}
+
+
+
+.loader-blocker {
+  background-color: #000000;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50px;
+  bottom: 0;
+  opacity: 0.2;
+  margin: auto;
+  z-index: 3000;
+  animation: fadein 0.2s;
+}
+
+.requester-contents {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+
+  .is-hidden {
+    display: none;
+  }
+}

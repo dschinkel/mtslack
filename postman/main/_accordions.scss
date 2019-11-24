@@ -1,0 +1,25 @@
+
+.accordion {
+  border-top: 1px solid var(--hairline-regular);
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+
+  .accordion-item {
+    margin-top: 16px;
+
+    .title {
+      background-color: var(--bg-primary);
+      color: var(--content-primary);
+      cursor: pointer;
+      font-size: 12px;
+      user-select: none;
+      height: 32px;
+    }
+
+    .panel {
+      overflow-y: auto;
+      overflow-x: hidden;
+      font-size: 12px;
+      padding-bottom: 8px;
+    }
+  }
+}

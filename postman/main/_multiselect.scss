@@ -1,0 +1,30 @@
+.multi-select-entity__list {
+  margin-top: 20px;
+  border: 1px solid var(--hairline-regular);
+  height: 180px;
+  overflow: auto;
+  overflow-x: hidden;
+
+  .multi-select-entity__item {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 0px 5px;
+    cursor: pointer;
+
+    .input-checkbox {
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+
+    .multi-select-entity__item--name {
+      white-space: pre;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &:first-child, &:hover, &.is-hovered {
+      background-color: var(--bg-secondary);
+    }
+  }
+}

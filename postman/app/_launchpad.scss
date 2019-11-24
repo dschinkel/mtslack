@@ -1,0 +1,351 @@
+
+.launchpad-greetings {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 120px;
+  min-height: 88px;
+
+  .launchpad-greeting-header {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    display: flex;
+  }
+
+  .launchpad-greeting-body {
+    display: flex;
+    line-height: 20px;
+    margin-top: 8px;
+  }
+
+  .launchpad-empty-greeting-shell {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    animation: fade 1s ease-in-out infinite;
+    overflow: hidden;
+  }
+
+  .launchpad-empty-greeting-shell__title {
+    height: 12px;
+    width: 100px;
+    border-radius: 3px;
+    background-color: var(--bg-tertiary);
+  }
+
+  .launchpad-empty-greeting-shell__subText {
+    height: 12px;
+    width: 350px;
+    border-radius: 3px;
+    margin-top: 12px;
+    background-color: var(--bg-tertiary);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.25;
+  }
+}
+
+.launchpad-joinworkspaces-container {
+  color: var(--content-primary);
+  overflow: auto;
+  max-height: 300px;
+
+  .launchpad-no-workspace-message {
+    color: var(--content-secondary);
+  }
+
+  .launchpad-joinworkspaces-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11px;
+    line-height: 18px;
+
+    .join-workspace-list-item {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      cursor: default;
+      -webkit-user-select: none;
+      user-select: none;
+
+      &:hover {
+        background-color: var(--bg-primary--shade--one);
+      }
+    }
+
+    .join-workspace-list-item--disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .join-workspace-list-item {
+      .launchpad-avatar-group-container {
+        display: flex;
+
+        .launchpad-avatar-group {
+          margin: 8px;
+        }
+      }
+
+      .workspace-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .workspace-details {
+          display: flex;
+          flex-direction: column;
+          white-space: nowrap;
+
+          .workspace-title {
+            font-weight: 600;
+            font-size: 12px;
+            color: var(--content-primary);
+            max-width: 200px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+
+          .workspace-subtitle {
+            font-weight: normal;
+            font-size: 12px;
+            color: var(--content-secondary);
+            max-width: 250px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+          }
+        }
+
+        .launchpad-join-workspace-btn {
+          cursor: pointer;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+.launchpad-joinworkspaces {
+  .launchpad-joinworkspaces-header {
+    color: var(--content-primary);
+    margin-bottom: 16px;
+
+    .launchpad-joinworkspaces-title {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 8px;
+    }
+
+    .launchpad-joinworkspaces-subtitle {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  .error-card-container__icon .icon-button {
+    background: var(--bg-tertiary);
+
+    i svg use {
+      fill: var(--content-secondary);
+    }
+
+    &:hover, &.is-hovered {
+      cursor: default;
+    }
+  }
+
+  .error-state-message-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+
+    .error-state-message {
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 20px;
+      color: var(--brand-primary);
+    }
+  }
+}
+
+
+.launchpad-customize {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+
+  .customize-header {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    margin: 16px 0 8px 0;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .toggle-switch-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+
+    .toggle-switch-content {
+      margin-left: 4px;
+    }
+
+    &:hover, &.is-hovered {
+      background-color: var(--bg-tertiary);
+    }
+  }
+
+  .more-settings {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+
+    .more-settings-icon {
+      margin-right: 15px;
+    }
+
+    &:hover, &.is-hovered {
+      background-color: var(--bg-tertiary);
+    }
+  }
+}
+
+.launchpad-recent-section {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+
+  .recent-header {
+    display: flex;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 16px 0 8px 0;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .default-message {
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+    margin-top: 8px;
+  }
+
+  .recent-workspaces-list {
+    display: flex;
+    flex-direction: column;
+
+    .recent-content {
+      display: flex;
+      align-items: center;
+      padding: 0 8px;
+      height: 40px;
+      border-radius: 4px;
+      cursor: default;
+      -webkit-user-select: none;
+      user-select: none;
+      cursor: pointer;
+
+      .workspace-icon {
+        margin-right: 8px;
+      }
+
+      .recent-workspace-name {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 250px;
+      }
+
+      &:hover, &.is-hovered {
+        background-color: var(--bg-tertiary);
+      }
+    }
+  }
+}
+
+
+.launchpad-editor {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px 32px;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  background-color: var(--bg-secondary);
+  color: var(--content-primary);
+  overflow-y: auto;
+}
+
+.launchpad-content {
+  display: flex;
+  flex-wrap: nowrap;
+  flex: 1;
+  margin-top: 16px;
+
+  .launchpad-left-component {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+    padding-top: 16px;
+  }
+
+  .launchpad-right-component {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .launchpad-box {
+      padding: 16px;
+      background-color: var(--bg-primary);
+      border: 1px solid var(--hairline-regular);
+      border-radius: 3px;
+      min-width: 400px;
+      margin-top: 16px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}

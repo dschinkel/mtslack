@@ -1,0 +1,59 @@
+
+.setup-team-content .tab-share-content-meta-text {
+  color: var(--content-primary);
+  font-size: 12px;
+}
+
+.setup-team-container {
+  margin-top: 24px;
+  display: flex;
+
+  .tab-share-content-meta-text {
+    color: var(--content-primary);
+    font-size: 12px;
+  }
+
+  .left, .right {
+    flex: 50%;
+  }
+
+  .input-container {
+    margin-bottom: 24px;
+
+    .input-label {
+      font-weight: 600;
+    }
+  }
+
+  .input-field {
+    margin-top: 8px;
+  }
+}
+
+.entity-empty-text {
+  display: block;
+  min-height: 81px;
+  color: var(--content-tertiary);
+}
+
+.setup-team-input-container {
+  display: flex;
+
+  .input-field {
+    flex: 80%;
+  }
+
+  .setup-team-input-meta-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  .setup-team-input-meta {
+    padding-left: 8px;
+  }
+}
+
+.team-setup-container {
+  padding: 20px;
+}

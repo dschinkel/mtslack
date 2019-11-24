@@ -1,0 +1,50 @@
+
+.skills {
+  .skills-header {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  .skills-list {
+    max-height: 300px;
+    margin-top: 16px;
+    overflow: auto;
+  }
+
+  .skill-list-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+
+    &:hover, &.is-hovered {
+      background-color: var(--bg-secondary);
+    }
+  }
+
+  .skill-list-item-content {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .skill-list-item-subText {
+    color: var(--content-secondary);
+  }
+
+  .error-card-container__icon .icon-button {
+    background: var(--bg-tertiary);
+
+    i svg use {
+      fill: var(--content-secondary);
+    }
+
+    &:hover, &.is-hovered {
+      cursor: default;
+    }
+  }
+}

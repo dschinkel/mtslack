@@ -1,0 +1,202 @@
+
+.popover {
+  min-height: 50px;
+  min-width: 100px;
+  max-width: 300px;
+  margin: 8px;
+  cursor: default;
+  color: var(--content-primary);
+
+  .popover-step {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    font-size: 11px;
+
+    .popover-step-title {
+      color: var(--accent-success);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      line-height: 20px;
+
+      .pie-progress-wrapper {
+        margin-right: 10px;
+      }
+    }
+
+    .popover-dismiss {
+      cursor: pointer;
+      align-self: center;
+      color: var(--content-secondary);
+    }
+  }
+
+  .popover-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .popover-header-title {
+      display: flex;
+      font-weight: 600;
+      font-size: 14px;
+      justify-content: space-between;
+      flex: 1;
+      overflow: hidden;
+
+      > span {
+        overflow: hidden;
+      }
+
+      .popover-dismiss {
+        padding: 3px 0 0 16px;
+      }
+    }
+  }
+
+  .popover-body {
+    margin-top: 8px;
+    line-height: 20px;
+
+    .popover-string {
+      margin-top: 8px;
+    }
+
+    .popover-markdown-label {
+      * {
+        margin: 0;
+      }
+
+      code {
+        flex: 1;
+        display: flex;
+        background: var(--bg-tertiary);
+        border-radius: 2px;
+        padding: 5px;
+        word-break: break-all;
+        margin-top: 10px;
+        user-select: all;
+      }
+
+      h3 {
+        color: var(--content-secondary);
+        font-weight: 600;
+        font-size: 12px;
+      }
+
+      a {
+        color: var(--brand-primary);
+      }
+    }
+
+    .popover-select-list {
+      margin-top: 8px;
+      flex-shrink: 0;
+
+      .dropdown {
+        width: 100%;
+        height: 30px;
+      }
+
+      .dropdown-button .btn {
+        width: 100%;
+        display: flex;
+
+        span {
+          flex: 1;
+          text-align: left;
+          width: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+
+      .popover-select-list-title {
+        font-weight: 600;
+      }
+
+      .popover-select-list-dropdown {
+        margin-top: 8px;
+      }
+    }
+
+    .popover-input {
+      margin-top: 8px;
+
+      .popover-input-title {
+        font-weight: 600;
+      }
+
+      .popover-input-body {
+        margin-top: 8px;
+      }
+    }
+
+    .popover-checkbox {
+      margin-top: 8px;
+
+      .popover-checkbox-title {
+        font-weight: 600;
+      }
+
+      .popover-checkbox-item {
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+      }
+
+      .popover-checkbox-label {
+        margin-left: 8px;
+      }
+    }
+
+    .popover-radio {
+      margin-top: 8px;
+
+      .popover-radio-title {
+        font-weight: 600;
+      }
+
+      .popover-radio-selector-button-label {
+        margin-top: 8px;
+        display: flex;
+        align-items: center;
+
+        span {
+          margin-left: 8px;
+          flex: 1;
+          text-align: left;
+          width: 0;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .popover-toggle {
+      margin-top: 8px;
+
+      .popover-toggle-title {
+        font-weight: 600;
+      }
+
+      .popover-toggle-body {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .popover-actions {
+    display: flex;
+    margin-top: 16px;
+    justify-content: flex-end;
+
+    .popover-secondary-action {
+      margin-right: 16px;
+      background: transparent;
+    }
+  }
+}

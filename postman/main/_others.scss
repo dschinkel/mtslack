@@ -1,0 +1,39 @@
+
+.help-text {
+  color: var(--content-tertiary);
+  padding-left: 30px;
+}
+
+.dropdown__menu-list {
+  min-height: 30px;
+}
+
+.input-label, .dropdown-label, .checkbox-group-label {
+  font-weight: 600;
+}
+
+
+.action-button__cancel {
+  margin-right: 10px;
+}
+
+.action-button__generate {
+  width: 40%;
+}
+
+
+.action-button__cancel {
+  margin-right: 10px;
+}
+
+.action-button__generate {
+  width: 40%;
+}
+
+.open-external-link-modal-message {
+  margin-top: 20px;
+}
+
+.open-external-link-modal-message-url {
+  color: var(--brand-primary);
+}

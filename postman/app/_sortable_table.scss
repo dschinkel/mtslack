@@ -1,0 +1,25 @@
+
+.sortable-table {
+  .sortable-table__header {
+    height: 30px;
+    background-color: var(--bg-primary);
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .sortable-table__header__sort {
+      cursor: pointer;
+
+      &.sortable-table__header__sort--asc {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .sortable-table__rows .sortable-table__row {
+    height: 64px;
+    box-sizing: border-box;
+    padding: 16px;
+  }
+}

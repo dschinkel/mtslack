@@ -1,0 +1,25 @@
+
+.archived-resource-item {
+  box-sizing: border-box;
+  box-shadow: 1px 0 4px 0 var(--hairline-strong);
+  display: flex;
+  flex-direction: row;
+  color: var(--content-primary);
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+
+  &.is-actionable {
+    cursor: pointer;
+  }
+}
+
+.archived-resource-item-icon-wrapper {
+  flex: 0 0 25px;
+}
+
+.archived-resource-item-text {
+  flex: 1;
+}

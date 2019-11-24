@@ -1,0 +1,85 @@
+
+.environment-template-newtemplate-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
+  border-top: 1px solid var(--hairline-regular);
+}
+
+.environment-template-modal-empty-view-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.environment-template-modal-empty-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.environment-template-modal-loading-container {
+  left: 47%;
+  position: absolute;
+  top: 5%;
+}
+
+.environment-template-modal-empty-view-content-header {
+  padding: 20px 0 10px;
+  font-size: 18px;
+}
+
+.environment-template-modal-empty-view-content-text {
+  max-width: 310px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: var(--content-secondary);
+  text-align: center;
+}
+
+.environment-template-modal-list-empty-view-content-text {
+  margin-bottom: 10px;
+  color: var(--content-secondary);
+  text-align: center;
+}
+
+.environment-template-modal-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  max-width: 80%;
+
+  .environment-template-modal-empty-view-content-header {
+    font-size: 12px;
+  }
+
+  .learnmore-link {
+    margin-bottom: 32px;
+  }
+
+  .signout-out-signin-btn {
+    font-size: 12px;
+    max-width: 200px;
+    align-self: center;
+  }
+}
+
+.environment-template-modal-action-button {
+  margin-top: 10px;
+  align-self: center;
+  min-width: 200px;
+}
+
+
+.environment-container {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

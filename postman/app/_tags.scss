@@ -1,0 +1,67 @@
+
+.tag {
+  padding: 4px 8px;
+  border-radius: 3px;
+  max-width: 150px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  &.tag-info {
+    background-color: var(--bg-secondary--shade--two);
+    color: var(--content-secondary);
+  }
+
+  &.tag-warn {
+    background-color: var(--accent-warning--highlight);
+    color: var(--accent-warning);
+  }
+
+  &.tag-success {
+    background-color: var(--accent-success--highlight);
+    color: var(--accent-success);
+  }
+
+  &.tag-error {
+    background-color: var(--accent-error--highlight);
+    color: var(--accent-error);
+  }
+}
+
+.editable-tag {
+  height: 20px;
+  width: 170px;
+  border-radius: 3px;
+  margin: 4px;
+  padding: 4px;
+  color: var(--content-primary);
+  display: flex;
+  align-items: center;
+
+  .text:hover {
+    cursor: text;
+  }
+
+  .pm-icon {
+    margin-right: 8px;
+  }
+
+  .tag-remove-btn:hover {
+    cursor: pointer;
+  }
+}
+
+.editable-tag-regular {
+  background-color: var(--bg-secondary);
+  border: solid 1px var(--bg-tertiary);
+}
+
+.editable-tag-error {
+  border: 1px dashed var(--accent-error);
+  background-color: var(--accent-error--highlight);
+  color: var(--accent-error);
+}
+
+.editable-tag.is-selected {
+  border: 1px solid var(--brand-secondary);
+}

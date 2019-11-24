@@ -1,0 +1,96 @@
+
+.right-overlay {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 110;
+  color: var(--content-primary);
+  background: rgba(0, 0, 0, 0.6);
+
+  .right-overlay__modal {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: absolute;
+    background: var(--bg-primary);
+    height: 100%;
+    right: 0;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+    font-size: 12px;
+
+    .right-overlay--resize-handle {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 5px;
+      cursor: ew-resize;
+    }
+
+    .right-overlay__content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      overflow: hidden;
+      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+
+      .right-overlay__header {
+        display: flex;
+        align-items: center;
+        color: var(--content-tertiary);
+
+        .right-overlay__breadcrumb {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          flex: 1;
+          font-weight: normal;
+          padding: 24px 0px 8px 24px;
+
+          .right-overlay__breadcrumb-item {
+            cursor: pointer;
+
+            &:after {
+              content: ' / ';
+              padding: 0 5px;
+            }
+
+            .right-overlay--breadcrumb-item-name:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .right-overlay__close-icon {
+          margin-left: 8px;
+          padding: 24px 24px 8px 8px;
+          cursor: default;
+          -webkit-user-select: none;
+          user-select: none;
+          cursor: pointer;
+        }
+      }
+
+      .right-overlay__title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 0px 24px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .right-overlay__details {
+        padding: 0 24px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        overflow-y: auto;
+      }
+    }
+  }
+}

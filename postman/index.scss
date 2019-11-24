@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+$primary: var(--primary);
+$primaryT: var(--primaryT);
+$accent: var(--accent);
+$accentT: var(--accentT);
+$accent2: var(--accent2);
+$accent2T: var(--accent2T);
+$bg: var(--bg);
+$fg: var(--fg);
+$text: var(--text);
+$selectBg: var(--selectBg);
+$selectFg: var(--selectFg);
+$button: var(--button);
+$bg2: var(--secondBg);
+$disabled: var(--disabled);
+$contrast: var(--contrast);
+$active: var(--active);
+$border: var(--border);
+$borderLight: var(--active);
+$hl: var(--hl);
+$tree: var(--tree);
+$notif: var(--notif);
+$excluded: var(--excluded);
+
+$yellow: var(--yellow);
+$green: var(--green);
+$cyan: var(--cyan);
+$blue: var(--blue);
+$purple: var(--purple);
+$red: var(--red);
+$red2: var(--red2);
+$orange: var(--orange);
+$orange2: var(--orange2);
+$gray: var(--gray);
+$silver: var(--silver);
+$black: var(--black);
+
+@import "core/index";
+@import "main/index";
+@import "app/index";
+@import "settings/index";

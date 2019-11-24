@@ -1,0 +1,96 @@
+
+.proxy-settings-content {
+  padding: 20px;
+  font-size: 12px;
+  overflow: auto;
+  max-height: 600px;
+}
+
+.proxy-settings-connection-wrapper {
+  padding: 0px;
+}
+
+.proxy-settings-toggle-switch-container {
+  padding: 8px 20px 0px 20px;
+  font-size: 12px;
+}
+
+.proxy-capture-requests-label, .proxy-settings-label {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  padding-bottom: 16px;
+}
+
+.proxy-settings-save-filters {
+  padding-bottom: 16px;
+}
+
+.proxy-modal .modal-content {
+  overflow: auto;
+}
+
+.proxy-settings-connection-group {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.proxy-settings-connection-input {
+  flex: 1;
+}
+
+.proxy-settings-connection-label {
+  flex: 0 0 32px;
+}
+
+.proxy-settings-connection-target-action-label {
+  flex: 1;
+  margin-right: 0;
+}
+
+.proxy-settings-filters-container {
+  padding-bottom: 16px;
+}
+
+.proxy-settings-filters-group {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+}
+
+.proxy-settings-filters-label {
+  font-style: normal;
+  font-weight: 600;
+  flex: 0 0 32px;
+  padding-right: 20px;
+}
+
+.proxy-settings-filters-input {
+  flex: 1;
+}
+
+.proxy-settings-filters-input-help {
+  color: var(--content-tertiary);
+  padding-top: 4px;
+}
+
+.proxy-settings-filters-wrapper {
+  overflow: auto;
+}
+
+.proxy-settings-show-filters {
+  margin-top: 16px;
+  max-height: 100px;
+
+  .show-filters-btn {
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+.proxy-show-filters-btn {
+  margin-top: 16px;
+  padding: 0px;
+}

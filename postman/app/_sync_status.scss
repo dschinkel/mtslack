@@ -1,0 +1,168 @@
+.sync-status {
+  display: flex;
+  min-width: 45px;
+}
+
+.sync-button {
+  &.sync-off {
+    background-color: #b94a48;
+
+    &:hover, &.is-hovered {
+      background-color: #ed4b48;
+    }
+  }
+
+  &.offline {
+    background-color: #5a5a5a;
+
+    &:hover, &.is-hovered {
+      background-color: #6e6e6e;
+    }
+  }
+
+  &.in-sync {
+    background-color: #f47023;
+  }
+
+  &.syncing, &.connecting {
+    background-color: #097bed;
+  }
+
+  &.syncing .pm-icon-sync, &.connecting .pm-icon-sync {
+    animation: rotate 1s infinite;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(-180deg);
+  }
+}
+
+.sync-button-icon {
+  display: block;
+  width: 22px;
+  height: 21px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIycHgiIGhlaWdodD0iMjFweCIgdmlld0JveD0iMCAwIDIyIDIxIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnNrZXRjaD0iaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoL25zIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggMy40ICgxNTU4OCkgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+aWNfbmF2X3N5bmNfbm9ybWFsPC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlBhZ2UtMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCIgc2tldGNoOnR5cGU9Ik1TUGFnZSI+CiAgICAgICAgPGcgaWQ9IkxpZ2h0LVRoZW1lLVN0eWxlc2hlZXQtLS1JY29ucyIgc2tldGNoOnR5cGU9Ik1TQXJ0Ym9hcmRHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQwMi4wMDAwMDAsIC0xNDUuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJOYXZiYXIiIHNrZXRjaDp0eXBlPSJNU0xheWVyR3JvdXAiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU0LjAwMDAwMCwgNTEuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8ZyBpZD0iU3luYyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQ0LjAwMDAwMCwgODkuMDAwMDAwKSIgc2tldGNoOnR5cGU9Ik1TU2hhcGVHcm91cCI+CiAgICAgICAgICAgICAgICAgICAgPGcgaWQ9ImljX25hdl9zeW5jX25vcm1hbCI+CiAgICAgICAgICAgICAgICAgICAgICAgIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQuMDAwMDAwLCA1LjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTEzLjYsMTEuNCBDMTMuNiwxMy43IDExLjcsMTUuNSA5LjUsMTUuNSBDNy4yLDE1LjUgNS40LDEzLjYgNS40LDExLjQgQzUuNCw5LjIgNy4zLDcuMyA5LjUsNy4zIEMxMS44LDcuMiAxMy42LDkuMSAxMy42LDExLjQiIGlkPSJTaGFwZSIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbCIgc3Ryb2tlPSIjRkZGRkZGIiBjeD0iOS41IiBjeT0iMTEuNCIgcj0iNC4xIj48L2NpcmNsZT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMS40LDkuMiBDMTEuOSw5LjUgMTIuMSwxMC40IDEyLjEsMTEiIGlkPSJTaGFwZSIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTExLjQsOS4yIEMxMS45LDkuNSAxMi4xLDEwLjQgMTIuMSwxMSIgaWQ9IlNoYXBlIiBzdHJva2U9IiNGRkZGRkYiPjwvcGF0aD4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxjaXJjbGUgaWQ9Ik92YWwiIHN0cm9rZT0iI0ZGRkZGRiIgY3g9IjEwLjEiIGN5PSIxMC4xIiByPSI5LjUiPjwvY2lyY2xlPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTYuMywxOC4yIEM2LjMsMTkuMSA1LjYsMTkuOSA0LjYsMTkuOSBDMy43LDE5LjkgMi45LDE5LjIgMi45LDE4LjIgQzIuOSwxNy4zIDMuNiwxNi41IDQuNiwxNi41IEM1LjUsMTYuNiA2LjMsMTcuMyA2LjMsMTguMiIgaWQ9IlNoYXBlIiBmaWxsPSIjRkZGRkZGIj48L3BhdGg+CiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGlkPSJPdmFsIiBzdHJva2U9IiNGRkZGRkYiIGN4PSI0LjYiIGN5PSIxOC4yIiByPSIxLjciPjwvY2lyY2xlPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTQuNSwzLjMgQzQuNSwzLjggNC4xLDQuMyAzLjUsNC4zIEMzLDQuMyAyLjUsMy45IDIuNSwzLjMgQzIuNSwyLjggMi45LDIuMyAzLjUsMi4zIEM0LDIuMyA0LjUsMi43IDQuNSwzLjMiIGlkPSJTaGFwZSIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbCIgc3Ryb2tlPSIjRkZGRkZGIiBjeD0iMy41IiBjeT0iMy4zIiByPSIxIj48L2NpcmNsZT4KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0yMS40LDcuMiBDMjEuNCw4LjEgMjAuNyw4LjkgMTkuOCw4LjkgQzE4LjksOC45IDE4LjEsOC4yIDE4LjEsNy4zIEMxOC4xLDYuNCAxOC44LDUuNiAxOS43LDUuNiBDMjAuNyw1LjYgMjEuNCw2LjMgMjEuNCw3LjIiIGlkPSJTaGFwZSIgZmlsbD0iI0ZGRkZGRiI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgPGNpcmNsZSBpZD0iT3ZhbCIgc3Ryb2tlPSIjRkZGRkZGIiBjeD0iMTkuOCIgY3k9IjcuMyIgcj0iMS43Ij48L2NpcmNsZT4KICAgICAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+);
+}
+
+.sync-status-tooltip {
+  z-index: 90;
+
+  .tooltip-wrapper {
+    padding: 20px;
+  }
+}
+
+.sync-status-tooltip-wrapper {
+  width: 220px;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+
+  .sync-status-tooltip-header {
+    display: flex;
+    padding-bottom: 10px;
+    font-size: 16px;
+    align-items: center;
+
+    &.sync-status-tooltip-header--no-description {
+      border-bottom: none;
+    }
+  }
+
+  .sync-status-tooltip-description {
+    display: block;
+    padding-top: 10px;
+    font-size: 12px;
+  }
+
+  .sync-status-tooltip-button {
+    padding: 17px 10px;
+    margin-top: 10px;
+  }
+}
+
+.sync-conflict {
+  overflow-x: auto;
+}
+
+.sync-conflict-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sync-conflict-data-column {
+  padding-right: 10px;
+}
+
+.sync-conflict-data-header {
+  display: flex;
+  width: 135px;
+  min-height: 45px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.sync-conflict-data-value {
+  width: 135px;
+  padding: 10px 5px 0 0;
+  word-break: break-word;
+}
+
+.sync-conflict-checkbox-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sync-conflict-checkbox {
+  flex: 0 0 16px;
+  margin-right: 10px;
+}
+
+.sync-conflict-footer-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 20px 10px 20px 0px;
+}
+
+.sync-issue-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 20px;
+
+  .sync-issue-content-left {
+    flex: 0 0 271px;
+    margin-right: 20px;
+  }
+
+  .sync-issue-content-right {
+    flex: 1;
+  }
+
+  .sync-issue-button {
+    width: 100%;
+  }
+}
+
+.sync-issue-detailed-log-container {
+  padding-bottom: 20px;
+
+  .sync-issue-detailed-log-head-text {
+    padding-bottom: 10px;
+  }
+}
+
+.sync-offline-status-bar {
+  min-height: 32px;
+  line-height: 18px;
+
+  .infobar__icon-wrapper {
+    display: none;
+  }
+}
+
+.workspace-switcher__list .sync-offline-status-bar {
+  height: auto;
+}

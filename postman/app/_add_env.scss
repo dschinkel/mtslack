@@ -1,0 +1,60 @@
+
+.manage-environment-meta {
+  color: var(--content-tertiary);
+  margin: 15px 20px 0;
+
+  span {
+    line-height: 24px;
+  }
+
+  .variable-help-text {
+    margin-top: 20px;
+  }
+}
+
+.add-environment-template {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.add-environment-template__header {
+  display: flex;
+
+  .add-environment-template__header__title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.add-environment__header__title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.add-environment-template__section-name {
+  display: flex;
+  margin: 10px 0;
+  align-items: flex-end;
+}
+
+.add-environment-template__section-name-extension {
+  padding-left: 5px;
+}
+
+.add-environment-template__section-values {
+  flex: 1;
+  height: 0;
+  overflow-y: auto;
+}
+
+.add-environment-template__section-controls {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.add-environment-template__section-controls__cancel {
+  margin-right: 10px;
+}

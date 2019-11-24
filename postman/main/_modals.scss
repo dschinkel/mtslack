@@ -1,0 +1,156 @@
+
+.ReactModal__Overlay--after-open {
+  background-color: rgba(61, 61, 61, 0.6) !important;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  z-index: 120;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+
+  .modal-header {
+    flex: 0 0 40px;
+    box-sizing: border-box;
+  }
+
+  .modal-content {
+    flex: 1;
+    box-sizing: border-box;
+    font-size: 12px;
+    line-height: 18px;
+
+    &.external-link {
+      cursor: pointer;
+      color: #f47023;
+    }
+
+    .learn-more-button {
+      padding-left: 0;
+    }
+  }
+
+  .modal-footer {
+    flex: 0 0 80px;
+    box-sizing: border-box;
+  }
+}
+
+.modal-header {
+  background-color: var(--dark-bg-primary);
+  display: flex;
+  flex-direction: row;
+
+  .modal-header-title {
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .modal-header-close-button-wrapper {
+    flex: 0 0 40px;
+  }
+}
+
+.modal-header-title {
+  font-size: 12px;
+  color: var(--dark-color-lightest);
+  padding: 12px 20px;
+}
+
+.modal-header-close-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-header-close-button {
+  cursor: default;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.modal-content {
+  background-color: var(--bg-primary);
+  padding: 20px 20px;
+  color: var(--content-primary);
+  overflow-y: auto;
+
+  &.is-centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.modal-footer {
+  background-color: var(--bg-primary);
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+
+  > .btn {
+    margin-left: 10px;
+  }
+
+  &.is-separated {
+    border-top: 1px solid var(--hairline-regular);
+  }
+}
+
+.invite-signed-out-modal {
+  height: 60vh;
+
+  .modal-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+
+    .btn-text {
+      padding: 0;
+    }
+
+    .modal-text .btn-text {
+      padding: 0 3px;
+    }
+  }
+
+  .signout-out-signin-btn {
+    margin-top: 32px;
+    font-weight: 300;
+    font-size: 12px;
+  }
+}
+
+.changelog-content {
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-bottom-width: 0;
+    color: var(--content-secondary);
+  }
+
+  a {
+    color: var(--brand-primary);
+    text-decoration: none;
+  }
+}
+
+.release-notes-modal .release-notes-modal--view-changelog-link {
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+/* React Modal styles */
+
+.ReactModal__Content {
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}

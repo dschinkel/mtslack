@@ -1,0 +1,142 @@
+
+.requester-left-sidebar-wrapper {
+  flex: 0 0 auto;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 300px;
+
+  &.is-overlaid {
+    position: absolute;
+    height: 100%;
+  }
+
+  &.is-hidden {
+    display: none;
+  }
+}
+
+.requester-left-sidebar {
+  contain: strict;
+  background-color: var(--bg-secondary);
+  z-index: 20;
+  border-right: 1px solid var(--hairline-regular);
+  box-sizing: border-box;
+  box-shadow: 1px 0 4px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.requester-left-sidebar__search-container {
+  flex: 0 0 40px;
+  padding: 10px 10px 0 10px;
+  box-sizing: border-box;
+}
+
+.requester-left-sidebar__tabs-container {
+  flex: 0 0 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--hairline-regular);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .tab {
+    font-size: 14px;
+  }
+
+  .requester-left-sidebar__api-beta-label {
+    font-size: 10px;
+    color: var(--brand-secondary);
+    font-weight: 600;
+    position: relative;
+    bottom: 6px;
+    left: 3px;
+  }
+}
+
+.requester-left-sidebar__tab-content-wrapper {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.requester-left-sidebar__tab-content {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &.is-hidden {
+    display: none;
+  }
+}
+
+.requester-left-sidebar-resize-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -5px;
+  width: 10px;
+  z-index: 100;
+  cursor: ew-resize;
+}
+
+.requester-builder {
+  display: flex;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+.requester-builder-header {
+  flex: 0 0 50px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid var(--hairline-regular);
+
+  .requester-tabs-wrapper {
+    display: flex;
+    flex: 1;
+    position: relative;
+    width: 0;
+    height: 31px;
+    margin-top: 20px;
+
+    .requester-tab-actions {
+      display: inherit;
+      position: sticky;
+      right: 0;
+      margin-left: 2px;
+      margin-right: 4px;
+    }
+
+    .requester-tab-nav-btn-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .requester-tab-nav-previous-icon {
+        opacity: 0.8;
+        padding: 0 5px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .requester-tab-nav-next-icon {
+        opacity: 0.8;
+        padding: 0 5px;
+        margin-left: 10px;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

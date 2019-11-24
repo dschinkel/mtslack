@@ -1,0 +1,50 @@
+
+.settings-shortcuts-wrapper .item-header {
+  display: flex;
+
+  .item-title {
+    flex: 1;
+  }
+}
+
+.settings-shortcuts-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  &.disabled {
+    opacity: 0.4;
+  }
+}
+
+.settings-shortcuts-list-item-header {
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 11px;
+  color: var(--content-tertiary);
+  margin-bottom: 8px;
+}
+
+.settings-shortcuts-list-item-content {
+  margin-bottom: 16px;
+}
+
+.settings-shortcuts-list-item {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 6px;
+}
+
+.settings-shortcuts-list-item-label {
+  flex: 2;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: var(--content-primary);
+}
+
+.settings-shortcuts-list-item-value {
+  flex: 1;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  color: var(--content-primary);
+}

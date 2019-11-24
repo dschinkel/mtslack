@@ -1,0 +1,45 @@
+
+.textarea {
+  width: 100%;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--hairline-regular);
+  outline: none;
+  font-size: 12px;
+  font-family: "Cousine", monospace;
+  padding: 10px;
+  box-sizing: border-box;
+  color: var(--content-primary);
+  vertical-align: bottom;
+  resize: vertical;
+
+  &:hover, &.is-hovered {
+    background-color: var(--bg-secondary--shade--one);
+    border-color: var(--hairline-regular--shade--two);
+  }
+
+  &:focus, &.is-focused {
+    background-color: var(--bg-primary);
+  }
+
+  &.textarea-warning {
+    border: 1px solid var(--accent-warning);
+  }
+
+  &.textarea-error {
+    border: 1px solid var(--accent-error);
+  }
+}
+
+.textarea-warning-text {
+  display: flex;
+  padding-left: 10px;
+  font-size: 10px;
+  color: var(--accent-warning);
+}
+
+.textarea-error-text {
+  display: flex;
+  padding-left: 10px;
+  font-size: 10px;
+  color: var(--accent-error);
+}

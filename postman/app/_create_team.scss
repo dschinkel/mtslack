@@ -1,0 +1,17 @@
+
+.create-team-empty {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  padding: 16px;
+  background-color: var(--brand-primary--highlight);
+  border-radius: 3px;
+
+  .create-team-empty__title {
+    flex: 1;
+    color: var(--content-primary);
+    font-size: 12px;
+  }
+}

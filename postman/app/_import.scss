@@ -1,0 +1,91 @@
+
+.import-tab-content {
+  padding: 20px 0 0;
+  overflow-y: auto;
+}
+
+.import-container {
+  .import-modal-description {
+    padding: 10px 0 20px;
+    font-size: 12px;
+  }
+
+  .import-modal-options-description {
+    font-size: 12px;
+  }
+
+  .import-options-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    .import-options {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      margin-top: 18px;
+
+      .import-options__item {
+        display: flex;
+        flex: 1;
+
+        &.is-disabled {
+          cursor: default;
+          opacity: 0.5;
+          cursor: default;
+          -webkit-user-select: none;
+          user-select: none;
+        }
+
+        .import-options__checkbox {
+          display: flex;
+          margin-right: 10px;
+
+          &.is-selected {
+            background-color: var(--brand-primary);
+          }
+        }
+
+        .import-options__checkbox-label {
+          user-select: none;
+          align-self: center;
+          cursor: pointer;
+          font-size: 12px;
+          color: var(--content-primary);
+          font-weight: 600;
+        }
+      }
+
+      .import-options-info {
+        color: var(--content-tertiary);
+        margin: 6px 27px;
+      }
+    }
+  }
+}
+
+.import-by-raw-text {
+  height: 280px;
+}
+
+.import-by-raw-text-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.import-by-raw-text-button {
+  width: 120px;
+  margin: 20px 0 0;
+}
+
+.import-by-url-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.import-by-url-button {
+  width: 120px;
+  margin: 20px 0 0;
+}

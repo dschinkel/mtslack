@@ -1,0 +1,201 @@
+
+.workspace-activity-feed-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.workspace-activity-feed-name-header {
+  padding: 20px 20px 30px;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: var(--content-primary);
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--hairline-regular);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  .workspace-activity-feed-name-header-content {
+    display: inline;
+  }
+}
+
+.workspace-activity-feed {
+  padding-top: 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 12px;
+  color: var(--content-primary);
+}
+
+.workspace-activity-feed-loading-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.workspace-activity-feed-loadmore-container {
+  flex: 1;
+  text-align: center;
+}
+
+.workspace-activity-item-loadfeed {
+  height: 50px;
+}
+
+.workspace-activity-feed-date-group-wrapper {
+  padding: 10px;
+}
+
+.workspace-activity-feed-date-group {
+  padding-bottom: 10px;
+  margin: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--content-secondary);
+}
+
+.workspace-activity-feed-empty-container {
+  padding: 30px 0;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--content-secondary);
+  text-align: center;
+
+  .workspace-activity-feed-empty-signin-link {
+    color: var(--brand-primary);
+    cursor: pointer;
+  }
+}
+
+.workspace-activity-item-wrapper {
+  display: flex;
+}
+
+.workspace-activity-item-content {
+  width: 100%;
+}
+
+.workspace-activity-feed-connect-line {
+  position: relative;
+  top: 20px;
+  left: 26px;
+  z-index: -1;
+  border-left: 1px solid var(--hairline-regular);
+}
+
+.workspace-activity-item-header {
+  display: flex;
+  padding: 10px 0;
+
+  .workspace-activity-item-head {
+    flex: 1;
+    margin-right: 20px;
+  }
+}
+
+.workspace-activity-item-body {
+  padding: 10px;
+  margin-left: 50px;
+  border: 1px solid var(--hairline-strong--shade--two);
+}
+
+.workspace-activity-item-details-wrapper {
+  padding: 0 10px;
+}
+
+.workspace-activity-item-details {
+  border-left: 3px solid var(--hairline-regular);
+  margin-left: 14px;
+  padding-left: 13px;
+}
+
+.workspace-activity-item-profile-pic-wrapper {
+  padding: 0 10px;
+}
+
+.workspace-activity-item-meta {
+  padding: 5px 0;
+  color: var(--content-secondary);
+
+  .workspace-activity-item-user {
+    font-weight: 500;
+    color: var(--content-secondary);
+    margin-right: 5px;
+  }
+}
+
+.workspace-activity-item-heading {
+  color: var(--content-secondary);
+}
+
+.workspace-activity-item-user, .workspace-activity-item-folder, .workspace-activity-item-response, .workspace-activity-item-request-name, .workspace-activity-item-collection-name {
+  font-weight: 600;
+  color: var(--content-primary);
+}
+
+.workspace-activity-item-user {
+  font-size: 11px;
+}
+
+.workspace-activity-item-time {
+  color: var(--content-secondary);
+  font-size: 11px;
+}
+
+.workspace-activity-item-restore {
+  margin-left: 5px;
+  color: var(--brand-primary);
+  display: inline-block;
+  cursor: default;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+
+  &.workspace-activity-item-restore--is-restoring {
+    display: inline-block;
+  }
+}
+
+.workspace-activity-item-wrapper:last-child .workspace-activity-feed-connect-line {
+  visibility: hidden;
+}
+
+.workspace-activity-item-details-content {
+  margin: 0 10px 10px;
+  font-size: 11px;
+  line-height: 12px;
+
+  &.normal-view {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.workspace-activity-item-details-content-left {
+  margin-right: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  align-self: baseline;
+}
+
+.workspace-activity-item-details-content-right {
+  font-style: normal;
+  color: var(--content-secondary);
+}
+
+.workspace-activity-item-details-content-data {
+  font-style: italic;
+}
+
+.workspace-activity-item-details-diff-view {
+  margin-top: 10px;
+  border: 1px solid var(--hairline-regular);
+  border-radius: 3px;
+
+  .diff-wrapper {
+    max-height: 300px;
+  }
+}

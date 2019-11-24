@@ -1,0 +1,300 @@
+
+/* Requester Icon Buttons */
+
+.sidebar-toggle-button {
+  &:active.btn-icon, &.is-active.btn-icon {
+    background-color: var(--content-secondary);
+  }
+}
+
+.window-new-button, .launch-runner-button, .import-collection-button {
+  margin-left: 10px;
+  height: 30px;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  color: var(--dark-content-primary);
+  background-color: var(--dark-bg-tertiary);
+  border-radius: 3px;
+}
+
+.window-new-button {
+  &:hover, &.is-hovered {
+    color: var(--dark-color-lightest);
+  }
+}
+
+.launch-runner-button {
+  &:hover, &.is-hovered {
+    color: var(--dark-color-lightest);
+  }
+}
+
+.import-collection-button {
+  &:hover, &.is-hovered {
+    color: var(--dark-color-lightest);
+  }
+}
+
+.window-new-button-dropdown {
+  .window-new-button {
+    &:hover {
+      .window-new-button-icon use, .down-solid-icon use {
+        fill: var(--dark-color-lightest);
+      }
+    }
+
+    &.is-hovered {
+      .window-new-button-icon use, .down-solid-icon use {
+        fill: var(--dark-color-lightest);
+      }
+    }
+
+    &:active {
+      .window-new-button-icon use, .down-solid-icon use {
+        fill: var(--dark-color-lightest);
+      }
+    }
+
+    &.is-active {
+      .window-new-button-icon use, .down-solid-icon use {
+        fill: var(--dark-color-lightest);
+      }
+    }
+  }
+
+  .window-new-button__label {
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  .window-new-button__shortcut {
+    color: var(--content-tertiary);
+  }
+}
+
+.settings-button .settings-button-icon.indicator {
+  &:after {
+    content: '';
+    background-color: var(--brand-primary);
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    right: 8px;
+    height: 7px;
+    width: 7px;
+  }
+
+  &.error:after {
+    background-color: var(--accent-error);
+  }
+}
+
+.settings-dropdown .dropdown-menu {
+  .dropdown-menu-item--update-available, .dropdown-menu-item--update-downloaded {
+    background-color: var(--brand-primary);
+    color: var(--dark-color-lightest);
+  }
+
+  .dropdown-menu-item--update-available {
+    &:hover, &.is-hovered {
+      background-color: var(--brand-primary--shade--two);
+    }
+  }
+
+  .dropdown-menu-item--update-downloaded {
+    &:hover, &.is-hovered {
+      background-color: var(--brand-primary--shade--two);
+    }
+  }
+
+  .dropdown-menu-item--update-available {
+    &:active, &.is-active {
+      background-color: var(--brand-primary--shade--one);
+    }
+  }
+
+  .dropdown-menu-item--update-downloaded {
+    &:active, &.is-active {
+      background-color: var(--brand-primary--shade--one);
+    }
+  }
+
+  .dropdown-menu-item--update-failed {
+    background-color: var(--accent-error);
+    color: var(--dark-color-lightest);
+
+    &:hover, &.is-hovered {
+      background-color: var(--accent-error--shade--two);
+    }
+
+    &:active, &.is-active {
+      background-color: var(--accent--error--shade--one);
+    }
+  }
+}
+
+.interceptor-button.is-active {
+  background-color: var(--brand-primary);
+}
+
+.interceptor-wrapper {
+  display: flex;
+
+  .interceptor-toggle-switch {
+    margin-left: 10px;
+  }
+}
+
+.team-info-dropdown {
+  .team-button {
+    margin-left: 5px;
+    margin-right: 0px;
+    font-weight: 600;
+  }
+
+  .upgrade-dropdown {
+    height: 30px;
+
+    .btn {
+      height: 30px;
+
+      &:nth-child(2) {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    width: 340px;
+
+    .dropdown-menu-item--sign-in, .dropdown-menu-item--enable-sync, .dropdown-menu-item--upgrade-to-pro, .dropdown-menu-item--teamname {
+      opacity: 1;
+    }
+
+    .dropdown-free-user-header-menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 32px 16px;
+      cursor: default;
+
+      &:hover {
+        background-color: var(--bg-secondary);
+      }
+    }
+
+    .dropdown-menu-item--teamname {
+      display: flex;
+      align-items: flex-start;
+      height: 70px;
+      padding: 16px;
+
+      &:hover, &.is-hovered {
+        background-color: transparent;
+      }
+
+      .team-info-dropdown__team-image {
+        display: flex;
+        height: 32px;
+        width: 32px;
+
+        img {
+          width: 32px;
+          height: 32px;
+          object-fit: contain;
+        }
+
+        &:hover, &.is-hovered {
+          cursor: pointer;
+        }
+      }
+
+      .team-info-dropdown__team-details {
+        display: flex;
+        flex-direction: row;
+        margin-left: 16px;
+        flex: 1;
+        justify-content: space-between;
+        overflow: hidden;
+
+        .team-info-dropdown__team-details-meta {
+          max-width: 130px;
+        }
+
+        .team-info-dropdown__team-details__name {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: normal;
+
+          &:hover, &.is-hovered {
+            cursor: pointer;
+          }
+        }
+
+        .team-info-dropdown__team-details__domain {
+          font-size: 12px;
+          line-height: normal;
+        }
+
+        .team-info-dropdown__team-details__name, .team-info-dropdown__team-details__domain {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+
+    .dropdown-menu-item--sign-in, .dropdown-menu-item--enable-sync, .dropdown-menu-item--upgrade-to-pro {
+      display: flex;
+      flex-direction: column;
+      height: 180px;
+      padding: 20px;
+    }
+
+    .dropdown-menu-item--sign-in .dropdown-menu-item__title, .dropdown-menu-item--enable-sync .dropdown-menu-item__title, .dropdown-menu-item--upgrade-to-pro .dropdown-menu-item__title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: var(--content-primary);
+      text-align: center;
+    }
+
+    .dropdown-menu-item--sign-in .dropdown-menu-item__subtitle, .dropdown-menu-item--enable-sync .dropdown-menu-item__subtitle, .dropdown-menu-item--upgrade-to-pro .dropdown-menu-item__subtitle {
+      font-size: 12px;
+      font-weight: 300;
+      margin-bottom: 20px;
+      color: var(--content-primary);
+      text-align: center;
+    }
+
+    .dropdown-menu-item--sign-in .dropdown-menu-item__learn-more, .dropdown-menu-item--enable-sync .dropdown-menu-item__learn-more {
+      margin-top: 20px;
+    }
+
+    .dropdown-menu-item--upgrade-to-pro {
+      .dropdown-menu-item__learn-more {
+        margin-top: 20px;
+      }
+
+      height: 220px;
+    }
+  }
+}
+
+
+.usage-warning {
+  .btn-primary {
+    min-width: 0px;
+
+    &:hover, &.is-hovered {
+      background-color: var(--brand-primary--shade--two);
+    }
+  }
+
+  .dropdown-caret {
+    margin: 0;
+
+    use {
+      fill: var(--dark-color-lightest);
+    }
+  }
+}

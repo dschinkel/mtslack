@@ -1,0 +1,137 @@
+
+/* Tabs */
+
+.tabs {
+  display: inline-flex;
+  flex-direction: row;
+
+  &.tabs-fluid {
+    display: flex;
+  }
+}
+
+.tabs-secondary {
+  box-sizing: border-box;
+  height: 30px;
+  border-radius: 3px;
+  background-color: var(--bg-tertiary);
+}
+
+.tabs-tertiary {
+  box-sizing: border-box;
+  height: 30px;
+}
+
+/* Tab */
+
+.tab {
+  flex: 0 0 auto;
+  cursor: default;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.tabs-fluid .tab {
+  flex: 1;
+}
+
+.tab-primary, .tab-primary-small {
+  padding: 6px 15px 6px 15px;
+  border-bottom: 3px solid transparent;
+  color: var(--content-tertiary);
+  font-weight: 400;
+}
+
+.tab-primary {
+  &:hover, &.is-hovered {
+    color: var(--content-tertiary--shade--two);
+    font-weight: 400;
+  }
+}
+
+.tab-primary-small {
+  &:hover, &.is-hovered {
+    color: var(--content-tertiary--shade--two);
+    font-weight: 400;
+  }
+}
+
+.tab-primary.is-active, .tab-primary-small.is-active {
+  color: var(--content-primary);
+  font-weight: 400;
+  border-bottom-color: var(--brand-primary);
+}
+
+.tab-primary.is-disabled {
+  color: var(--hairline-strong);
+  cursor: default;
+}
+
+.tab-primary-small {
+  &.is-disabled {
+    color: var(--hairline-strong);
+    cursor: default;
+  }
+
+  padding: 6px 8px;
+}
+
+.tab-secondary {
+  display: flex;
+  align-items: center;
+  padding: 0 15px 0 15px;
+  color: var(--content-tertiary);
+  font-weight: 400;
+
+  &:hover, &.is-hovered {
+    color: var(--content-tertiary--shade--two);
+    font-weight: 400;
+  }
+
+  &:active, &.is-active {
+    color: var(--content-primary);
+    font-weight: 400;
+  }
+}
+
+.tab-tertiary {
+  padding: 6px 15px 6px 15px;
+  color: var(--content-tertiary);
+  font-weight: 400;
+
+  &:hover, &.is-hovered {
+    color: var(--content-tertiary--shade--two);
+    font-weight: 400;
+  }
+
+  &:active, &.is-active {
+    color: var(--content-primary);
+    font-weight: 400;
+  }
+}
+
+.tabs-vertical {
+  flex-direction: column;
+  text-align: left;
+
+  .tab {
+    display: flex;
+    align-items: center;
+    color: var(--content-primary);
+    border-bottom: none;
+    font-size: 14px;
+    height: 35px;
+    padding-left: 20px;
+
+    &.is-active {
+      color: var(--brand-primary);
+      border-bottom: none;
+      background-color: var(--bg-tertiary);
+    }
+  }
+}

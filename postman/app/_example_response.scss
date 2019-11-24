@@ -1,0 +1,122 @@
+
+.example-response-meta-wrapper {
+  color: var(--content-tertiary);
+  font-size: 10px;
+  border-bottom: 1px solid var(--hairline-regular);
+  display: flex;
+  align-items: center;
+
+  .is-docked {
+    position: absolute;
+    box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.3);
+
+    .save-response-infobar {
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .example-response-fixed-header {
+    flex: 2;
+    z-index: 10;
+  }
+
+  .save-response-infobar {
+    font-size: 12px;
+    padding: 5px 20px;
+    background-color: var(--brand-secondary);
+    color: var(--dark-color-lightest);
+    border-radius: 3px;
+    font-family: OpenSans;
+
+    .btn {
+      padding: 0;
+      color: var(--dark-color-lightest);
+    }
+  }
+
+  .example-response-meta--actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+    align-items: center;
+    font-size: 12px;
+    background: var(--bg-secondary);
+    height: 30px;
+
+    .example-response-save {
+      display: flex;
+      align-items: center;
+      flex: 0 0 auto;
+      justify-content: flex-end;
+
+      .btn {
+        margin-left: 10px;
+      }
+
+      .example-saved {
+        cursor: not-allowed;
+      }
+    }
+
+    .example-response-meta--new-label {
+      color: var(--content-primary);
+    }
+  }
+
+  .example-goto-parent-request-action {
+    width: 200px;
+  }
+
+  .goto-base-request {
+    padding: 0px;
+    color: var(--content-primary);
+
+    .request-name {
+      width: 200px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      text-align: left;
+    }
+  }
+
+  .goto-base-request-icon {
+    margin-right: 5px;
+  }
+
+  .example-response-delete {
+    flex: 0;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+}
+
+.example-response-name-group {
+  color: var(--content-tertiary);
+  font-size: 10px;
+
+  .example-response-name--label {
+    margin-top: 10px;
+  }
+
+  .example-response-name {
+    padding-top: 10px;
+  }
+}
+
+.layout-1-column .example-response__contents {
+  padding: 0;
+
+  .response-body-viewer__header, .response-body-text-viewer__header {
+    padding: 0 10px 0 10px;
+  }
+
+  .response-body-viewer__content, .response-body-text-viewer__content {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .response-body-viewer__content .response-body-pretty-viewer, .response-body-text-viewer__content .response-body-pretty-viewer {
+    padding-top: 0;
+  }
+}

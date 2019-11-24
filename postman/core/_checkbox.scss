@@ -1,0 +1,31 @@
+
+.input-checkbox {
+  height: 16px;
+  width: 16px;
+  border: 1px solid var(--hairline-regular);
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  .pm-icon-normal {
+    opacity: 0;
+  }
+
+  &:hover .pm-icon-normal, &.is-hovered .pm-icon-normal {
+    opacity: 0.4;
+  }
+
+  &.is-disabled {
+    cursor: default;
+  }
+
+  &.is-selected {
+    background-color: var(--color-darkest);
+
+    .pm-icon use {
+      fill: var(--bg-primary);
+    }
+  }
+}

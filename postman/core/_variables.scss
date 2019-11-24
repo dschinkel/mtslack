@@ -1,0 +1,139 @@
+
+/* Variables */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+  &.full-width {
+    width: 100%;
+
+    .dropdown-button .btn {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  &.scroll-menu .dropdown-menu {
+    max-height: 120px;
+    overflow-y: auto;
+  }
+}
+
+.dropdown-menu {
+  padding: 4px 0;
+  box-sizing: border-box;
+  min-width: 170px;
+  background-color: var(--bg-secondary);
+  border-radius: 3px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
+.dropdown-menu-item-shortcut {
+  color: var(--content-tertiary);
+}
+
+.dropdown-menu-item {
+  position: relative;
+  box-sizing: border-box;
+  height: 30px;
+  padding: 0 15px;
+  color: var(--content-primary);
+  font-size: 12px;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  cursor: default;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+
+  &:hover, &.is-hovered {
+    background-color: var(--bg-secondary--shade--one);
+  }
+
+  &:hover .dropdown-menu-item-shortcut, &.is-hovered .dropdown-menu-item-shortcut {
+    color: var(--content-primary);
+  }
+
+  &:focus, &.is-focused {
+    background-color: var(--bg-secondary--shade--one);
+  }
+
+  &.align-right {
+    text-align: right;
+  }
+
+  &.is-focused, &.is-selected {
+    background: var(--bg-secondary--shade--one);
+  }
+
+  &.is-disabled {
+    cursor: default;
+    opacity: 0.5;
+    position: relative;
+
+    .dropdown-menu-item__tooltip {
+      position: absolute;
+      padding: 10px;
+    }
+  }
+
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.dropdown-menu-item-icon {
+  flex: 0 0 20px;
+  margin-right: 10px;
+}
+
+.dropdown-menu-item-label {
+  flex: 1;
+}
+
+.dropdown-caret {
+  margin-left: 10px;
+
+  &.pm-icon {
+    display: inline-flex;
+  }
+}
+
+.btn-group-separated .dropdown-caret {
+  margin-left: 0;
+}
+
+.dropdown-sub-menu-item {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: 0;
+  visibility: hidden;
+  border-radius: 3px;
+
+  &.show {
+    visibility: visible;
+  }
+}
+
+.is-sub-item-available .expand-icon-wrapper {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-left: 7px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-item-header {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--content-tertiary);
+  height: 25px;
+  padding: 7px 15px;
+  box-sizing: border-box;
+}

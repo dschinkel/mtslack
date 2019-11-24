@@ -1,0 +1,52 @@
+
+.environment-globals {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+}
+
+.environment-globals__header {
+  display: flex;
+  margin: 20px 20px 10px;
+
+  .environment-globals__header__title {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.environment-globals__header__title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.environment-globals__download {
+  cursor: pointer;
+}
+
+.environment-globals__alert {
+  margin: 10px 20px;
+}
+
+.environment-globals__values {
+  flex: 1;
+  overflow-y: auto;
+  height: 0;
+  margin: 0 20px 15px;
+}
+
+.environment-globals__controls {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 0 0 30px;
+  margin-top: auto;
+  padding: 20px;
+  align-items: center;
+  border-top: 1px solid var(--hairline-regular);
+
+  .btn {
+    margin-left: 10px;
+  }
+}

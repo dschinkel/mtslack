@@ -1,0 +1,323 @@
+
+.invite-users-file-drop {
+  display: flex;
+  flex: 1;
+}
+
+.add-user__list {
+  flex: 1;
+  border: 1px solid var(--hairline-regular);
+  border-radius: 3px;
+  height: 240px;
+  overflow: hidden;
+}
+
+.invite-user-tag {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  overflow: hidden;
+
+  .avatar {
+    margin-right: 8px;
+  }
+
+  .user-email {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.add-user__option {
+  display: flex;
+  align-items: center;
+
+  .pm-icon {
+    margin-right: 8px;
+  }
+}
+
+.empty-state--no-users .upload {
+  color: var(--brand-primary);
+  cursor: pointer;
+}
+
+.item-roles__container {
+  height: 200px;
+  overflow-y: auto;
+
+  .permission-list-container .permission-list {
+    padding-bottom: 0;
+    border-bottom: none;
+    margin: 0;
+
+    .permission-list-item {
+      margin: 8px;
+    }
+
+    .permission-list-item--user {
+      margin-right: 24px;
+
+      &.can-remove {
+        margin-right: initial;
+      }
+    }
+  }
+}
+
+.add-user-list-container {
+  height: calc(100% - 80px);
+}
+
+.add-user__item {
+  display: flex;
+  min-height: 40px;
+  padding: 0px 5px;
+  justify-content: space-between;
+  align-items: center;
+
+  &.invalid-email {
+    color: var(--accent-error);
+
+    .add-user__invite-pending {
+      color: var(--accent-error);
+    }
+  }
+
+  .add-user__item__anonymous-icon-container {
+    background-color: var(--bg-tertiary);
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .add-user__avatar-icon {
+    flex: 0 0 20px;
+    margin-right: 10px;
+  }
+
+  .add-user__avatar-name {
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-left: 8px;
+    flex: 1;
+  }
+
+  .add-user__invite-pending {
+    color: var(--content-secondary);
+    white-space: pre;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 170px;
+  }
+
+  .add-user__item__label {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex: 1;
+    margin-left: 4px;
+  }
+
+  .add-user__item__roles__container {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+
+    &.can-delete {
+      margin-right: 0;
+    }
+
+    .add-user__item__warning {
+      margin-right: 8px;
+
+      use {
+        fill: var(--accent-warning);
+      }
+    }
+  }
+
+  .add-user__item__roles {
+    &.dropdown {
+      width: 170px;
+    }
+
+    .dropdown-button {
+      .btn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &.add-user__input {
+    padding: 0px;
+    position: relative;
+    border-bottom: 1px solid var(--hairline-regular);
+    display: flex;
+    max-height: 80px;
+    overflow-y: auto;
+    align-items: stretch;
+
+    .dropdown {
+      display: flex;
+      position: sticky;
+      top: 0;
+
+      .dropdown-button {
+        border-right: 1px solid var(--hairline-regular);
+        border-radius: 3px 0 0 3px;
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .input-suggestion-group {
+      flex: 1;
+    }
+
+    .input {
+      border-width: 0;
+      border-radius: 0px;
+      margin-left: 10px;
+      background-color: transparent;
+      padding: 0 70px 0 5px;
+      height: 40px;
+    }
+
+    &:hover, &.is-hovered {
+      background-color: var(--bg-secondary);
+    }
+  }
+
+  .add-user__input-label {
+    position: absolute;
+    z-index: 1;
+    border-radius: 0px;
+    padding: 10px 11px;
+  }
+
+  .add-user__button {
+    position: sticky;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .add-user__delete-icon {
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    flex: 0 0 20px;
+    margin-left: 10px;
+  }
+}
+
+
+.invite-user-team-link {
+  display: flex;
+  flex-direction: column;
+
+  .invite-user-share-title {
+    color: var(--content-primary);
+    font-weight: 600;
+  }
+
+  .invite-user-share-subtitle {
+    color: var(--content-tertiary);
+  }
+
+  .invite-user-actions {
+    display: flex;
+    flex-direction: row;
+
+    .btn-secondary {
+      width: 116px;
+    }
+
+    margin-top: 8px;
+  }
+
+  .invite-user-share-subtitle {
+    margin-top: 8px;
+  }
+
+  .invite-user-team-link-input-container {
+    flex: 1;
+    display: flex;
+    position: relative;
+
+    .btn-secondary {
+      width: 84px;
+    }
+
+    .invite-user-team-link-input {
+      margin-right: 8px;
+      cursor: pointer;
+
+      &.is-disabled {
+        cursor: default;
+        -webkit-user-select: none;
+        user-select: none;
+        color: var(--content-tertiary);
+        cursor: not-allowed;
+      }
+
+      &.is-copied {
+        border: 1px solid var(--accent-success);
+      }
+    }
+
+    .invite-user-team-link-action {
+      position: absolute;
+      right: 0;
+      padding: 8px;
+      cursor: pointer;
+
+      &.is-disabled {
+        cursor: not-allowed;
+
+        svg use {
+          fill-opacity: 0.5;
+        }
+      }
+
+      &.success use {
+        fill: var(--accent-success);
+      }
+    }
+
+    .dropdown {
+      background-color: var(--bg-tertiary);
+      height: 30px;
+      width: 30px;
+      margin-left: 8px;
+      cursor: pointer;
+
+      .dropdown-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+      }
+    }
+  }
+
+  .invite-user-team-link--loading {
+    cursor: not-allowed;
+  }
+}

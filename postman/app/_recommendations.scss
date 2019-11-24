@@ -1,0 +1,69 @@
+
+.recommendations {
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  color: var(--content-secondary);
+  font-size: 12px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .recommendation-divider {
+    display: flex;
+    align-items: center;
+    margin: 0 48px;
+
+    hr {
+      flex: 1;
+      background-color: var(--hairline-regular);
+      height: 1px;
+      border: 0;
+    }
+
+    .label {
+      font-weight: 600;
+      padding: 0 10px;
+    }
+  }
+
+  .recommendation-item {
+    position: relative;
+    padding: 5px 10px;
+    background-color: var(--bg-secondary);
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    margin: 12px 48px 0 48px;
+    justify-content: center;
+    align-self: center;
+
+    &:hover .recommendation-dismiss, &.is-hovered .recommendation-dismiss {
+      visibility: visible;
+    }
+
+    .recommendation-description {
+      padding: 0 10px;
+      text-align: center;
+    }
+
+    .recommendation-action {
+      border-left: 1px solid var(--hairline-strong);
+      border-radius: 0;
+    }
+
+    .recommendation-dismiss {
+      visibility: hidden;
+      position: absolute;
+      right: -60px;
+      cursor: pointer;
+      padding: 10px;
+
+      &:hover, &.is-hovered {
+        visibility: visible;
+      }
+    }
+
+    &:hover, &.is-hovered {
+      background-color: var(--bg-tertiary);
+    }
+  }
+}

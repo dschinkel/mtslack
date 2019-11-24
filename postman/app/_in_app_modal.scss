@@ -1,0 +1,147 @@
+.in-app-modal-content {
+  color: var(--content-primary);
+
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
+    margin: 1.5em 0 0.5em;
+  }
+
+  h1 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  h5 {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  h6 {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  hr {
+    border-style: none;
+    border-width: 0;
+    border-bottom: 1px solid var(--hairline-regular);
+  }
+
+  blockquote {
+    padding-left: 16px;
+    margin-left: 8px;
+    border-left: 4px solid var(--hairline-regular);
+    color: var(--content-secondary);
+
+    blockquote {
+      margin-left: 20px;
+    }
+  }
+
+  p, span {
+    margin: 3px 0;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  em {
+    font-style: italic;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  ul, ol {
+    margin: 5px;
+  }
+
+  a {
+    color: var(--brand-primary);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  pre {
+    padding: 3px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--hairline-regular);
+    border-radius: 3px;
+
+    code {
+      padding: 0;
+      background-color: transparent;
+      border: 0;
+      border-radius: 0;
+    }
+  }
+
+  code {
+    padding: 1px 3px;
+    font-family: "Cousine", monospace;
+    font-size: 12px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--hairline-regular);
+    border-radius: 3px;
+  }
+
+  table {
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 3px;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 1px solid var(--hairline-regular);
+
+    th, td {
+      max-width: 360px;
+      padding: 4px 8px;
+      word-break: normal;
+      vertical-align: top;
+      white-space: pre-line;
+      border: 1px solid var(--hairline-regular);
+    }
+
+    th:first-child, td:first-child {
+      border-left: none;
+    }
+
+    th:last-child, td:last-child {
+      border-right: none;
+    }
+
+    th {
+      border-top: none;
+    }
+
+    tr:last-child {
+      th, td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

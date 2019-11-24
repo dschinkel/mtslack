@@ -1,0 +1,54 @@
+
+.collection-meta-icons {
+  display: flex;
+  margin-left: 5px;
+
+  .collection-meta-icon {
+    margin-right: 5px;
+  }
+}
+
+.collection-fork-label {
+  display: inline-flex;
+  max-width: 100%;
+  align-items: center;
+  overflow: hidden;
+  color: var(--content-secondary);
+
+  span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+  }
+
+  .pm-icon {
+    margin-right: 4px;
+  }
+}
+
+.collection-fork-label-tooltip {
+  .pm-icon {
+    margin-right: 4px;
+    margin-top: 4px;
+  }
+
+  .collection-fork-label-tooltip__header {
+    display: flex;
+  }
+
+  .collection-fork-label-tooltip__description {
+    margin-top: 8px;
+  }
+}
+
+/**
+ * Styling for `CollectionConfigurationList` and `FolderConfigurationList` component
+ */
+
+.collection-configuration-list {
+  height: 100%;
+  overflow-y: auto;
+  padding: 0px 10px;
+  width: 100%;
+}

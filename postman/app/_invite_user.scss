@@ -1,0 +1,133 @@
+
+.invite-user-modal {
+  .modal-header {
+    flex: 0 0 40px;
+
+    .modal-header-title {
+      font-family: "OpenSans", Helvetica, Arial, sans-serif;
+      font-size: 12px;
+    }
+  }
+
+  .empty-state--no-users {
+    height: 200px;
+    color: var(--content-secondary);
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .create-new-workspace__input-group {
+    margin-top: 16px;
+  }
+
+  .modal-content {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 75vh;
+
+    .invite-user-modal__email-privileges-denied {
+      margin: 16px 0;
+      color: var(--accent-error);
+    }
+
+    .invite-user-workspace-meta-title {
+      color: var(--content-primary);
+      margin-bottom: 16px;
+    }
+
+    .invite-user-workspace-meta-text {
+      color: var(--content-tertiary);
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    .invite-user-modal-alert {
+      margin-top: 8px;
+    }
+  }
+
+  .button-small {
+    width: 100px;
+  }
+
+  .button-medium {
+    width: 120px;
+  }
+
+  .button-large {
+    width: 200px;
+  }
+}
+
+.invitation-sent-text-meta {
+  margin-top: 32px;
+  margin-left: 16px;
+  color: var(--content-secondary);
+}
+
+.invitation-sent-info-meta {
+  margin-top: 80px;
+  margin-left: 16px;
+  color: var(--content-secondary);
+}
+
+.setup-team-name-meta {
+  margin-top: 32px;
+  margin-left: 16px;
+  color: var(--content-tertiary);
+}
+
+.setup-team-url-meta {
+  margin-top: 50px;
+  margin-left: 16px;
+  color: var(--content-tertiary);
+}
+
+.share-entity-model .setup-team-model-content {
+  padding: 16px;
+}
+
+.invite-user-alert-container {
+  margin-bottom: 8px;
+}
+
+
+.invite-container {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  flex-wrap: wrap;
+  max-height: 80px;
+
+  .invite-placeholder {
+    margin-left: 8px;
+    position: absolute;
+  }
+
+  .active-input {
+    flex: 1;
+    padding-left: 8px;
+  }
+}
+
+.user-suggestion {
+  height: 56px;
+
+  .avatar {
+    margin-right: 8px;
+  }
+
+  .user-suggestion-details {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .user-suggestion__email {
+      margin-top: 4px;
+      color: var(--content-secondary);
+    }
+  }
+}

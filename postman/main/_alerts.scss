@@ -1,0 +1,93 @@
+.alert {
+  padding: 16px;
+  display: flex;
+  font-family: "OpenSans", Helvetica, Arial, sans-serif;
+  color: var(--content-primary);
+  position: relative;
+
+  a {
+    color: var(--brand-primary);
+    text-decoration: none;
+  }
+
+  .alert-icon {
+    display: flex;
+    margin: 1px 8px 0px 0px;
+    flex-shrink: 0;
+  }
+
+  .alert-content {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+
+    .alert-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 8px;
+
+      * {
+        margin: 0;
+      }
+    }
+
+    .alert-body {
+      font-size: 12px;
+      line-height: 20px;
+
+      * {
+        margin: 0;
+      }
+    }
+
+    .alert-actions .alert-primary-action {
+      margin-right: 16px;
+    }
+  }
+
+  .alert-content-shrink {
+    padding-right: 30px;
+  }
+
+  .alert-actions {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .alert-dismiss {
+    width: 48px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 0px 4px 4px 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+
+    &:hover, .alert-close:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.alert-info {
+  background-color: var(--bg-secondary);
+}
+
+.alert-success {
+  background-color: var(--accent-success--highlight);
+}
+
+.alert-error {
+  background-color: var(--accent-error--highlight);
+}
+
+.alert-warn {
+  background-color: var(--accent-warning--highlight);
+}

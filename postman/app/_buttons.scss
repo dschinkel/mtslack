@@ -1,0 +1,33 @@
+
+.info-button {
+  display: flex;
+
+  &.error use {
+    fill: var(--accent-error);
+  }
+
+  .info-button__icon {
+    display: flex;
+  }
+}
+
+.folder-button {
+  display: flex;
+
+  &.error use {
+    fill: var(--accent-error);
+  }
+
+  .folder-button__icon {
+    display: flex;
+  }
+}
+
+.warning-button {
+  display: flex;
+  cursor: pointer;
+
+  .warning-icon use {
+    fill: var(--accent-warning);
+  }
+}
