@@ -1,249 +1,91 @@
-
-/* Inputs */
-
-.input-field {
-  display: flex;
-  flex: 1;
-}
-
 .input {
-  border: 1px solid transparent;
-  color: var(--content-primary);
-  width: 100%;
-  font-size: 12px;
+  color: $fg;
   font-family: $fontFamily;
-  height: 30px;
-  box-sizing: border-box;
-  background-color: transparent;
-  padding: 0;
+  background: $bg;
+  border-radius: 2px;
+  border: 2px solid $borderLight;
 
   &.show-focus {
     &:focus, &.is-focused {
-      border-color: var(--hairline-strong);
+      border-width: 2px;
+      border-color: $accent;
     }
   }
 
   &::-webkit-input-placeholder {
-    font-size: 12px;
-    color: var(--content-tertiary);
+    color: $disabled;
   }
 }
 
 .input-error-section {
-  margin-left: -20px;
-  margin-top: 8px;
-  position: relative;
-
   .input-error-icon use {
-    fill: var(--accent-error);
+    fill: $error;
   }
 
   .input-error-tooltip {
-    display: none;
-    position: absolute;
-    left: 20px;
-    top: -5px;
-    font-size: 10px;
-    background-color: var(--accent-error);
-    color: var(--dark-color-lightest);
+    background-color: $error;
+    color: $selectFg;
     font-family: $fontFamily;
-    padding: 3px 5px;
-    border-radius: 2px;
-    margin-top: 2px;
-    white-space: nowrap;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
-    z-index: 1000;
-  }
-
-  &:hover .input-error-tooltip, &.is-hovered .input-error-tooltip {
-    display: flex;
-    align-items: center;
   }
 }
 
 .input-warning-section {
-  margin-left: -20px;
-  margin-top: 8px;
-  position: relative;
-
   .input-warning-icon use {
-    fill: var(--accent-warning);
+    fill: $yellow;
   }
 
   .input-warning-tooltip {
-    display: none;
-    position: absolute;
-    left: 20px;
-    top: -5px;
-    font-size: 10px;
-    background-color: var(--accent-warning);
-    color: var(--dark-color-lightest);
+    background-color: $yellow;
+    color: $selectFg;
     font-family: $fontFamily;
-    padding: 3px 5px;
-    border-radius: 2px;
-    margin-top: 2px;
-    white-space: nowrap;
-    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
-    z-index: 1000;
-  }
-
-  &:hover .input-warning-tooltip, &.is-hovered .input-warning-tooltip {
-    display: flex;
-    align-items: center;
   }
 }
 
 .input-line {
-  border-bottom: 1px solid var(--hairline-regular);
-  padding-left: 10px;
-  padding-right: 30px;
+  border-bottom: 1px solid $borderLight;
 
   &:focus, &.is-focused {
-    border-bottom-color: var(--brand-primary);
-  }
-
-  &:hover, &.is-hovered {
-    background-color: var(--hairline-regular--shade--one);
+    border-bottom: 2px solid $accent;
   }
 }
 
 .input-box {
-  border-radius: 3px;
-  border: 1px solid var(--hairline-regular);
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: var(--bg-secondary);
+  background: $bg;
+  border-radius: 2px;
+  border: 2px solid $borderLight;
 
   &:hover, &.is-hovered {
-    border-color: var(--hairline-regular--shade--two);
-    background-color: var(--bg-secondary--shade--one);
+    border-color: $primary;
+    background: $bg;
   }
 
   &:focus, &.is-focused {
-    border-color: var(--hairline-regular--shade--one);
-    background-color: var(--bg-primary);
+    border-color: $accent;
   }
 
   &.is-error {
-    border-color: var(--accent-error);
-  }
-
-  &.input-huge {
-    height: 40px;
-    font-size: 16px;
-
-    &::-webkit-input-placeholder {
-      font-size: 16px;
-    }
+    border-color: $error;
   }
 }
-
-.input-type-file {
-  padding-top: 5px;
-  cursor: default;
-  -webkit-user-select: none;
-  user-select: none;
-  cursor: pointer;
-}
-
 
 .file-input {
-  display: flex;
-  align-items: center;
-  padding: 4px;
-
-  /*
-    Over-write the default behavior of native file input element
-  */
-
-  input[type=file]::-webkit-file-upload-button {
-    width: 0px;
-    height: 0px;
-  }
-
-  .file-input__fake {
-    position: relative;
-    height: 20px;
-    min-width: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    cursor: pointer;
-  }
-
   .file-input__native {
-    opacity: 0;
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    pointer-events: none;
-
     &:focus + .file-input__fake {
-      background-color: var(--bg-tertiary--shade--three);
+      background-color: $excluded;
     }
   }
 
   .file-input__name {
-    box-sizing: border-box;
-    display: flex;
-    min-width: 0;
-    height: 20px;
-    align-items: center;
-    border-radius: 3px;
-    border: 1px solid var(--hairline-strong);
-    font-size: 12px;
+    border-radius: 0;
+    border: $borderLight;
     font-family: $fontFamily;
-    color: var(--content-primary);
-    background-color: transparent;
-    padding: 4px 2px;
+    color: $fg;
 
     &.show-focus {
       &:focus, &.is-focused {
-        border-color: var(--hairline-strong);
+        border-color: $accent;
       }
     }
-
-    .file-input__name__title {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
-
-    .file-input__name__delete-icon {
-      margin-left: 6px;
-      padding: 2px;
-      cursor: pointer;
-    }
-  }
-}
-
-
-.password-input {
-  position: relative;
-}
-
-.password-input__toggle {
-  display: inline;
-  cursor: pointer;
-  user-select: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  i {
-    padding: 7px 10px;
-
-    &.pm-icon-md {
-      padding: 8px 10px;
-    }
-  }
-}
-
-.password-input input {
-  padding-right: 36px;
-
-  .input-box .input-huge {
-    padding-right: 44px;
   }
 }
 

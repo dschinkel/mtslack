@@ -1,6 +1,6 @@
 .request-editor-send-button {
   .btn {
-    background-color: $accent2;
+    background-color: $accentT;
     color: $selectFg;
 
     use {
@@ -8,11 +8,11 @@
     }
 
     &:hover, &.is-hovered {
-      background-color: $accent2;
+      background-color: $accent;
     }
 
     &:active, &.is-active {
-      background-color: $accent2;
+      background-color: $accent;
     }
   }
 

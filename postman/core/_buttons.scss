@@ -2,10 +2,19 @@
   font-family: $fontFamily;
   color: $text;
   background: $button;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: small;
+
+  &:hover, &.is-hovered {
+    background: $hl;
+    color: $selectFg;
+  }
 }
 
 .btn-primary {
-  background-color: rgba($accent, 0.8);
+  background-color: $accentT;
   color: $selectFg;
 
   &:focus, &.is-focused, &:hover, &.is-hovered {
@@ -14,6 +23,11 @@
 
   &:active, &.is-active {
     background-color: $accent;
+  }
+
+  &:hover, &.is-hovered {
+    background: $accent;
+    color: $selectFg;
   }
 
   &.is-disabled {
@@ -40,6 +54,11 @@
     color: $selectFg;
   }
 
+  &:hover, &.is-hovered {
+    background: $hl;
+    color: $selectFg;
+  }
+
   &.is-disabled {
     opacity: 0.5;
 
@@ -52,9 +71,16 @@
 
 .btn-text {
   color: $text;
+  height: auto;
+  background: $button;
 
   &.is-disabled {
     opacity: 0.5;
+  }
+
+  &:hover, &.is-hovered {
+    background: $hl;
+    color: $selectFg;
   }
 }
 
